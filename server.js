@@ -21,10 +21,10 @@ app.get('/article-4', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-4.html'));
 });
 app.get('/article-5', function (req, res) {
-  res.send('article 5 will be served here');
+  res.sendFile(path.join(__dirname, 'ui', 'article-5.html'));
 });
 app.get('/article-6', function (req, res) {
-  res.send('article 6 will be served here');
+  res.sendFile(path.join(__dirname, 'ui', 'article-6.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
