@@ -62,7 +62,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 app.get('/articles/:ARTICLE-1', function (req, res) {
   
-  pool.query("SELECT * FROM article WHERE title = '" + req.parans.articleName + "'", function (req, res) {
+  pool.query("SELECT * FROM article WHERE title = '" + req.parans.ARTICLE-1 + "'", function (req, res) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
