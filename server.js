@@ -60,9 +60,6 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.get('/articles/:Article-B', function (req, res) {
-  res.sendFile<img src = url("http://www.servnetuk.com/sites/default/files/servnet_slider_3_4.jpg")>;
-});
 app.get('/articles/:Article-A', function (req, res) {
   
   pool.query("SELECT * FROM article WHERE title = '" + req.parans.Article-A + "'", function (req, res) {
