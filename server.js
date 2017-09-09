@@ -61,7 +61,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 app.get('/articles/:Article-B', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, url("http://www.servnetuk.com/sites/default/files/servnet_slider_3_4.jpg")));
 });
 app.get('/articles/:Article-A', function (req, res) {
   
