@@ -77,7 +77,7 @@ app.get('/article/:article.html', function (req, res) {
           res.status(500).send(err.toString());
       } else {
           if (result.rows.length === 0) {
-              res.status(404).send('Article not found');
+              res.status(404).send('<p style="font-size:40px;"><strong>HELLO WORLD</strong>');
           } else {
               var articleData = result.rows[0];
               res.send(createTemplate(articleData));
