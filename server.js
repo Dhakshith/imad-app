@@ -70,9 +70,9 @@ var date=data.date;
 var heading=data.heading;
 var content=data.content;
 }
-app.get('/article/:article', function (req, res) {
+app.get('/article/:article.html', function (req, res) {
   
-  pool.query("SELECT * FROM article WHERE title = $1", [req.params.article], function (err, result) {
+  pool.query("SELECT * FROM article WHERE title = $1", [req.params.article.html], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
