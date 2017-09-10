@@ -77,7 +77,7 @@ app.get('/article/:article.html', function (req, res) {
           res.status(500).send(err.toString());
       } else {
           if (result.rows.length === 0) {
-              res.status(404).send('<p style="font-size:40px;"><strong>HELLO WORLD</strong>');
+              res.status(404).send('<body bgcolor=Blue><p style="color:red;"><p style="font-size:100px;"><strong><b><h1>HELLO WORLD</h1></b></strong></body>');
           } else {
               var articleData = result.rows[0];
               res.send(createTemplate(articleData));
