@@ -60,6 +60,10 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+app.get('/:ArticleName', function (req,res) {
+    var ArticleName = req.params.ArticleName;
+    res.send(createTemplate(Article-A[ArticleName]));
+});
 app.get('/articles/:Article-A', function (req, res) {
   
   pool.query("SELECT * FROM article WHERE title = $1", [req.params.Article-A], function (err, result) {
