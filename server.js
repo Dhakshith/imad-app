@@ -70,7 +70,7 @@ var date=data.date;
 var heading=data.heading;
 var content=data.content;
 }
-app.get('/articles/:article', function (req, res) {
+app.get('/article', function (req, res) {
   
   pool.query("SELECT * FROM article WHERE title = $1", [req.params.article], function (err, result) {
       if (err) {
