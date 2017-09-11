@@ -7,16 +7,21 @@ app.use(morgan('combined'));
 
 var content = {
     title: "Article 9 | S.Dhakshith Raam",
-    heading: "Article 9",
     date: "document.getElementById('demo').innerHTML = Date()",
     content:'   <h1>This is my content for my nineth article</h1>'
 };
 
-var htmlTemplate = { 
-'<!DOCTYPE html><html><head><p style="font-size:75px;"><strong><b>Article-8 | Dhakshith</b></strong><div><p style="font-size:36px;"><a href="/">Home</a></div><hr/>   <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button><p id="demo"></p><div><p style="font-size:50px;"><strong><b>Hi!This is my 8th article!</b></strong></div><img src="http://fullhdpictures.com/wp-content/uploads/2016/09/Sceptile-Pictures.png" width="500" height="500"></body></html>'
-};
+function createTemplate(data) {
+    var title = data.title;
+    var date = data.date;
+    content = data.content;
+}
+    var htmlTemplate = { 
+    '<!DOCTYPE html><html><head><p style="font-size:75px;"><strong><b>${title}</b></strong><div><p style="font-size:36px;"><a href="/">Home</a></div><hr/>${date}<p id="demo"></p><div><p style="font-size:50px;"><strong><b>${content}</b></strong></div><img src="http://fullhdpictures.com/wp-content/uploads/2016/09/Sceptile-Pictures.png" width="500" height="500"></body></html>'
+    :UUID};
+
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-1', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'article-1.html'));
