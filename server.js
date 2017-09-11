@@ -1,31 +1,10 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
-var config = {
-    user: 'sdhakshithraam',
-    database: 'sdhakshithraam',
-    host: 'db.imad.hasura-app.io',
-    port: '5432',
-    password: process.env.DB_PASSWORD
-};
 
 var app = express();
 app.use(morgan('combined'));
 
-var pool = new Pool(config);
-app.get('/test-db', function (req,res) {
-    //make a select request
-    //return a response with the results
-    pool.query('SELECT * FROM test', function (err, result) {
-        if (err) {
-            res.status(500).send(err.toString());
-        } else {
-            res.send(JSON.stringify(result.rows));
-        }
-    }
-);
-});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -66,28 +45,7 @@ app.get('/:ArticleName', function (req,res) {
     var ArticleName = req.params.ArticleName;
     res.send(createTemplate(Article-A[ArticleName]));
 });
-            function createTemplate(data){
-var title=data.title;
-var date=data.date;
-var heading=data.heading;
-var content=data.content;
-}
-app.get('/article/:article.html', function (req, res) {
-  
-  pool.query("SELECT * FROM article WHERE title = $1", [req.params.article.html], function (err, result) {
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-          if (result.rows.length === 0) {
-              res.status(404).send('<body bgcolor=Blue><strong><b><h1 style="font-size:200px;text-align:center">HELLO WORLD<br>I am S.Dhakshith Raam</h1></b></strong></body>');
-          } else {
-              var articleData = result.rows[0];
-              res.send(createTemplate(articleData));
-          }
-      }
-  }
-);
-});
+
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
