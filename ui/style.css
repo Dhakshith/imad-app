@@ -1,9 +1,3 @@
-body {
-    font-family: AR DESTINE;
-    background-color: darkblue;
-    margin-top: 75px;
-}
-
 .center {
     text-align: center;
 }
@@ -20,7 +14,10 @@ body {
     height: 450px;
 }
 .body {
-            background-image: url("http://www.servnetuk.com/sites/default/files/servnet_slider_3_4.jpg");
+    background-image: url("http://www.servnetuk.com/sites/default/files/servnet_slider_3_4.jpg");
+    font-family: AR DESTINE;
+    background-color: darkblue;
+    margin-top: 75px;
         }
 .styling {
     max-width: 800px;
