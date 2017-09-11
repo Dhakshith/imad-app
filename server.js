@@ -15,10 +15,11 @@ function createTemplate(data) {
     var title = data.title;
     var date = data.date;
     var content = data.content;
-}
+
     var htmlTemplate = { 
     '<!DOCTYPE html><html><head><p style="font-size:75px;"><strong><b>${title}</b></strong><div><p style="font-size:36px;"><a href="/">Home</a></div><hr/>${date}<p id="demo"></p><div><p style="font-size:50px;"><strong><b>${content}</b></strong></div><img src="http://fullhdpictures.com/wp-content/uploads/2016/09/Sceptile-Pictures.png" width="500" height="500"></body></html>'
     :UUID};
+    return htmlTemplate;}
 
 app.get('/', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
