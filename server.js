@@ -49,10 +49,10 @@ app.get('/article-8', function (req,res) {
 var counter = 0;
 app.get('/counter', function (req,res) {
     counter = counter + 1;
-    res.send(counter.toString());
+    res.send(counter.toString())
 });
 
 var port = 8080;
 app.listen(8080, function () {
-    'No logs';
-}); 
+    console.log('IMAD course app running on port 8080!');
+});
