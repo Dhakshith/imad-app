@@ -39,6 +39,9 @@ app.get('/article-7', function (req, res) {
 app.get('/article-8', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-8.html'));
 });
+app.get('/article-9', function (req, res) 
+'<!DOCTYPE html><html><head><style>body {background-image: url("http://www.servnetuk.com/sites/default/files/servnet_slider_3_4.jpg");}</style><p style="font-size:75px;"><strong><b>Article-9 | Dhakshith</b></strong><div><p style="font-size:36px;"><a href="/">Home</a></div><hr/><button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button><p id="demo"></p><div><p style="font-size:50px;"><strong><b>Hi!This is my 9th article!</b></strong></div><img id='pokeball'src="http://fullhdpictures.com/wp-content/uploads/2016/09/Sceptile-Pictures.png" width="500" height="500"></body></html>';
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
