@@ -1,101 +1,86 @@
-<!DOCTYPE HTML>
-<html>
-	<!--
-		@author Ben Poole, http://benpoole.com
-		Example HTML5 code for playing with the local WebKit (Opera too?) SQL database.
-		@see http://benpoole.com/weblog/201106222227
-	-->
-	<head>
-	<meta charset="UTF-8" />
-	<title>Winkles Of The World Unite!</title>
-	
-	<style type="text/css">
-		body {font-family: Helvetica, sans-serif; font-size: 100%; line-height: 1.4em}
-		input, button {width: 25em; font-size: 100%; padding: .25em}
-	</style>
-	
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript">
-		// Generic error callback for db transactions
-		var errCallback = function(){
-			alert("Oh noes! There haz bin a datamabase error!");
-		}
-	
-		// Open / initialise the db - this will fail in browsers like Firefox & IE
-		var db = openDatabase("winkles", "1.0", "Winkles Of The World", 32678);
-	 
-		// Create winkles table if required
-		db.transaction(function(transaction){
-			transaction.executeSql("CREATE TABLE IF NOT EXISTS winkles (" +
-				"id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," +
-				"winklename TEXT NOT NULL, location TEXT NOT NULL);");
-		});
-	
-		// This is the SAVE function
-		var saveWinkle = function(winklename, location, successCallback){
-			db.transaction(function(transaction){
-				transaction.executeSql(("INSERT INTO winkles (winklename, location) VALUES (?, ?);"), 
-				[winklename, location], function(transaction, results){successCallback(results);}, errCallback);
-			});
-		};
-		
-		// This is a LOAD function, which pulls all winkles for a given location
-		var loadWinkles = function(location, successCallback){
-			db.transaction(function(transaction){
-				transaction.executeSql(("SELECT * FROM winkles WHERE location=?"), [location],
-					function(transaction, results){successCallback(results);}, errCallback);
-				});
-		};
-	
-		// Document ready event. Time for some subversive injection, hurr hurr
-		$(function(){
-			var form = $("form");
-		
-			// Callback when loading data (@see showWinkles())
-			var updatePage = function(results){
-				var list = $("#winkle-list");
-				list.empty();
-				console.dir(results);
-				if (results.rows.length==0){
-					alert("Alas, there be no winkles here.");
-				} else {
-					$.each(results.rows, function(rowIndex){
-						var row = results.rows.item(rowIndex);
-						list.append( "<li>" + row.winklename + ", " + row.location + "</li>");
-					});
-				}
-			};
-		 
-			// Override the default form submit in favour of our code
-			form.submit(function(event){
-				event.preventDefault();
-				saveWinkle($('#winklename').val(), $('#location').val(), function(){
-					alert($('#winklename').val() + "'s data has been saved!");
-				})
-			});
-			
-			// Bind winkle listing to a button in the page
-			$('#show-me').click(function(){loadWinkles($('#where').val(), updatePage);});
-		});
-	</script>
-</head>
-
-<body>
-	<h1>Winkles Of The World Unite</h1>
-	<p>This wee bit of example code accompanies the blog post, <cite><a href="http://benpoole.com/weblog/201106222227">Off-line web apps: local Web SQL &amp; Javascript</a></cite> over at <a href="http://benpoole.com">benpoole.com</a>.</p>
-
-	<form>
-		<h2>Winkle name &amp; location:</h2>
-		<p><input type="text" id="winklename" name="winklename" class="name" placeholder="Winkle name here" /></p>
-		<p><input type="text" id="location" name="location" class="location" placeholder="Winkle location here" /></p>
-		<p><input type="submit" value="Save this winkle" /></p>
-	</form>
-	
-	<p>Type in a location below &amp; then click the button to see what we&#8217;ve got:</p>
-	<p><input id="where" name="where" placeholder="Location to check for winkles" /></p>
-	<p><input type="button" id="show-me" value="Show me the winkles!" /></p>
-
-	<h2>Winkle list</h2>
-	<ul id="winkle-list"><!-- set by updatePage() --></ul>
-</body>
-</html>
+var server = require('server-js');
+ 
+ 
+/*   server.use();   
+  *   
+*   here you can write the middleware code like checking whether the user has login etc.
+*   here you can use all the middlewares supported by the express webframework
+*   like for example :- 
+*      
+*     server.use(morgan());//it is a logging middleware
+*
+*   u should always write your middleware at the top request will traverse in the order
+*   you written your server so your middleware should be at the top.
+*   you can use more than one middleware like the following.
+*
+*     server.use(morgan());
+*     server.use(bodyparser());
+*     
+*      server.use(function(req,res,next)){
+*       if you are using a function as a middleware you should call next() at
+*        the end of the function otherwise the request will not reach other layers
+*        in your server.
+*      }
+*
+*    example:- 
+*              
+*               server.use(function(req,res,next){
+*                    // --middleware code--
+*                     next();               
+*               });
+*
+*    
+*    if you are handled the request in middleware based on condition like this you should not call
+*    next() after u handled the request,if you do an exception will be thrown.
+*                
+*     server.use(function(req,res,next){
+*                         
+*         if(somecondition){
+*             res.end('Error');
+*             //you should not call next() here because you already handled request
+*         }else{
+*             next(); 
+*         }                  
+*                         
+*    });
+*
+*/
+ 
+server.use(function(req,res,next){
+  
+  //middleware code 
+  
+    next();
+});
+ 
+server.static(__dirname);
+ 
+server.static(__dirname+'/test');
+ 
+ 
+server.get('/path', function(req, res) {
+    res.end('path get');
+})
+ 
+server.get('/path/:id', function(req, res) {
+    res.end('path get with param' + req.params.id);
+});
+ 
+server.route('/route').get(function(req, res) {
+    res.end('received');
+}).put(function(req, res) {
+    res.end('received put');
+}).delete(function(req, res) {
+    res.end('received delete');
+});
+ 
+server.route('/route2').get(function(req, res) {
+    res.end('received route2 get');
+}).put(function(req, res) {
+    res.end('route put');
+});
+ 
+server.start().listen(3000, function() {
+    console.log('server started');
+});
+ 
