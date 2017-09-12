@@ -22,5 +22,5 @@ function stopMoving () {
 }
 var marginLeft = 0;
 img.onclick = function () {
-    stopMoving
+    stopMoving;
 };
