@@ -15,12 +15,3 @@ function moveRight () {
 img.onclick = function () {
     var interval = setInterval(moveRight, 10);
 };
-var img = document.getElementById('pokemon');
-function stopMoving () {
-    marginLeft = marginLeft + 0;
-    img.style.marginLeft = marginLeft + 'px';
-}
-var marginLeft = 0;
-img.onclick = function () {
-    stopMoving;
-};
