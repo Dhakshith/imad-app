@@ -1,5 +1,17 @@
 console.log('Loaded!');
-var img = document.getElementById('pokemon','pokeball');
+//extra functions{
+//---
+//---
+//But I did not do!!!
+//---
+//---
+//extra functions}
+var img = document.getElementById('pokemon');
+var marginLeft = 0;
+function moveRight () {
+    marginLeft = marginLeft + 0.5;
+    img.style.marginLeft = marginLeft + 'px';
+}
 img.onclick = function () {
-    img.style.marginLeft = '500px';
+    var interval = setInterval(moveRight, 10);
 };
