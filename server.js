@@ -41,10 +41,6 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.get('/:ArticleName', function (req,res) {
-    var ArticleName = req.params.ArticleName;
-    res.send(createTemplate(Article-A[ArticleName]));
-});
 app.get('/MyProfile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Profile.html'));
 });
