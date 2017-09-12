@@ -17,19 +17,27 @@ img.onclick = function () {
 };
 
 
+//Counter code:
 var button = document.getElementById('counter');
-var counter = 0;
+
 button.onclick = function () {
   
-  //Make a request to the counter endpoint
+  //Create a request object:
+  var request = new XMLHttpRequest();
   
-  //Capture the response and store it in a variable
-  
-  //Render the variable in the correct span
-  
-  //Code:
-  
-  counter = counter + 1;
-  var span = document.getElementById('count');
-  span.innerHTML = counter.toString();
+  //Capture the response and store it in a variable:
+  request.onreadystatechange = function() {
+      if (request.readyState === XMLHttpRequest.DONE) {
+          //Take Some Action
+          if (request.status === 200) {
+              var counter = request.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();
+          }
+      }
+      //If not done yet, no action
+  };
+  //Let us make the request
+  request.open('GET', 'http://sdhakshithraam.imad.hasura-app.io/counter', true);
+  request.send(null);
 };
