@@ -46,6 +46,13 @@ app.get('/article-7', function (req,res) {
 app.get('/article-8', function (req,res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-8.html'));
 });
+
+var names = [];
+app.get('/submit-name/:name', function (req,res) {
+    var name = req.params.name;
+    names.push(names);
+    res.send(JSON.stringify(names));
+});
 var counter = 0;
 app.get('/counter', function (req,res) {
     counter = counter + 1;
