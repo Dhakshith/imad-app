@@ -56,7 +56,7 @@ app.get('/submit-name/:name', function (req,res) {
 var counter = 0;
 app.get('/counter', function (req,res) {
     counter = counter + 1;
-    res.send(counter.toString())
+    res.send(counter.toString());
 });
 
 var port = 8080;
