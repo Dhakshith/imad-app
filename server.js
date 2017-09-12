@@ -1,6 +1,6 @@
 var server = require('server-js');
- 
- 
+
+
 /*   server.use();   
   *   
 *   here you can write the middleware code like checking whether the user has login etc.
@@ -45,42 +45,42 @@ var server = require('server-js');
 *    });
 *
 */
- 
+
 server.use(function(req,res,next){
   
-  //middleware code 
+  //middleware code
   
-    next();
+	next();
 });
- 
+
 server.static(__dirname);
- 
+
 server.static(__dirname+'/test');
- 
- 
+
+
 server.get('/path', function(req, res) {
-    res.end('path get');
+	res.end('path get');
 })
- 
+
 server.get('/path/:id', function(req, res) {
-    res.end('path get with param' + req.params.id);
+	res.end('path get with param' + req.params.id);
 });
- 
+
 server.route('/route').get(function(req, res) {
-    res.end('received');
+	res.end('received');
 }).put(function(req, res) {
-    res.end('received put');
+	res.end('received put');
 }).delete(function(req, res) {
-    res.end('received delete');
+	res.end('received delete');
 });
- 
+
 server.route('/route2').get(function(req, res) {
-    res.end('received route2 get');
+	res.end('received route2 get');
 }).put(function(req, res) {
-    res.end('route put');
+	res.end('route put');
 });
- 
+
 server.start().listen(3000, function() {
-    console.log('server started');
+	console.log('server started');
 });
- 
+
