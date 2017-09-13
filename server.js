@@ -49,17 +49,6 @@ app.get('/article-8', function (req,res) {
 app.get('/article-9', function (req,res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-9.html'));
 });
-var names = [];
-app.get('/submit-name/:name', function (req,res) {
-    var name = req.params.name;
-    names.push(names);
-    res.send(JSON.stringify(names));
-});
-var counter = 0;
-app.get('/counter', function (req,res) {
-    counter = counter + 1;
-    res.send(counter.toString());
-});
 
 var port = 8080;
 app.listen(8080, function () {
