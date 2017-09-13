@@ -61,5 +61,5 @@ app.get('/counter', function (req,res) {
 
 var port = 8080;
 app.listen(8080, function () {
-    console.log('IMAD course app running on port 8080!');
+    
 });
