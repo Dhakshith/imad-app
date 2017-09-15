@@ -1,11 +1,11 @@
 console.log('Loaded!');
-//extra simple functions{
+//extra simple functions
 //---
 //---
 //But I did not do!!!
 //---
 //---
-//extra simple functions}
+//extra simple functions
 var img = document.getElementById('pokemon');
 var marginLeft = 0;
 function moveRight () {
@@ -19,7 +19,6 @@ img.onclick = function () {
 
 //Counter code:
 var button = document.getElementById('counter');
-
 button.onclick = function () {
   
   //Create a request object:
