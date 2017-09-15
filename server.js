@@ -46,6 +46,9 @@ app.get('/article-7', function (req,res) {
 app.get('/article-8', function (req,res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-8.html'));
 });
+app.get('/MyProfile', function (req,res) {
+    res.sendFile(path.join(__dirname, 'ui', 'Profile.html'));
+});
 
 var port = 8080;
 app.listen(8080, function () {
