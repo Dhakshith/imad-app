@@ -9,6 +9,9 @@ body {
     text-align: center;  
 }
 .container {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 800px;
     margin: 0 auto;
     color: #FF732E;
