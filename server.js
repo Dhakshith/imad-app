@@ -10,6 +10,7 @@ var articleOne = {
                         <title>
                             Article-1 | Dhakshith
                         </title>
+                        <link href="style.css" rel="stylesheet" />
                     </head>
                     <body>
                         <div class="container">                    
