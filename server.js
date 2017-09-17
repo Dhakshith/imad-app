@@ -8,10 +8,16 @@ app.use(morgan('combined'));
 var articleTwo = {
     content: `<!DOCTYPE html>
 <html>
-    <head><title>Article-2 | Dhakshith</title><link href="/style.css" rel= "stylesheet" /></head>
+    <head>
+        <title>
+            Article-2 | Dhakshith
+        </title>
+        <link href="/style.css" rel= "stylesheet" />
+    </head>
     <body>
+        <div class="container">
         <p style="font-size:75px;"><strong>Article-2 | Dhakshith</strong>
-        <meta name="viewport" content="width=device-width, initial+scale=1" /> <div class="container">
+        <meta name="viewport" content="width=device-width, initial+scale=1" />
         <div>
             <p style="font-size:37px;"><a href="/">Home</a>
         </div>
