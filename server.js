@@ -3,8 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-var articles = {
-    articleThree : {
+    articleThree = {
         content: `
                     <!DOCTYPE html>
                     <html>
@@ -36,7 +35,7 @@ var articles = {
                         </body>
                     </html>`
     },
-    articleTwo : {
+    articleTwo = {
         content: `<!DOCTYPE html>
     <html>
         <head>
@@ -67,7 +66,7 @@ var articles = {
         </body>
     </html>`
     },
-    articleOne : {
+    articleOne = {
         content: `<!DOCTYPE html>
                   <html>
                         <head>    
@@ -100,7 +99,6 @@ var articles = {
                         </body>
                   </html>`
     };
-};
 function createTemplate (data) {
     var content = data.content;
     var htmlTemplate = `
