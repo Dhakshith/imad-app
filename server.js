@@ -5,25 +5,32 @@ var path = require('path');
 var articleOne = {
     content: `<!DOCTYPE html>
               <html>
-                    <link href="/ui/style.css" rel= "stylesheet" />
+                    <head>    
+                        <link href="/ui/style.css" rel= "stylesheet" />
+                        <title>
+                            Article-1 | Dhakshith
+                        </title>
+                    </head>
                     <body>
-                        <p style="font-size:75px;"><strong>Article-1 | Dhakshith</strong>
-                        <meta name="viewport" content="width=device-width, initial+scale=1" />
-                        <div>
-                            <p style="font-size:37px;"><a href="/">Home</a>
+                        <div class="container">                    
+                            <p style="font-size:75px;"><strong>Article-1 | Dhakshith</strong>
+                            <meta name="viewport" content="width=device-width, initial+scale=1" />
+                            <div>
+                                <p style="font-size:37px;"><a href="/">Home</a>
+                            </div>
+                            <p style="font-size:20px;color:red"><span id="datetime"></span></p>
+                            <script>
+                                var dt = new Date();
+                                document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                            </script>
+                            <hr/>
+                            </p>
+                            <div>
+                                <p style="font-size:50px;">
+                                    <strong><b>Hi!This is my 1st article</b></strong>
+                            </div>
+                            <img id = 'pokemon' src="https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d063d2b775dee12a8cc73f05d7b9b589.png" class="img-medium"/>
                         </div>
-                        <p><span id="datetime"></span></p>
-                        <script>
-                            var dt = new Date();
-                            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-                        </script>
-                        <hr/>
-                        </p>
-                        <div>
-                            <p style="font-size:50px;">
-                                <strong><b>Hi!This is my 1st article</b></strong>
-                        </div>
-                        <img id = 'pokemon' src="https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d063d2b775dee12a8cc73f05d7b9b589.png" class="img-medium"/>
                     </body>
               </html>`
 };
