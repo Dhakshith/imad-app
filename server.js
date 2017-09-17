@@ -22,7 +22,7 @@ var articleOne = {
                             <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                             <script>
                                 var dt = new Date();
-                                document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                                document.getElementById("datetime").innerHTML = Date();
                             </script>
                             <hr/>
                             </p>
