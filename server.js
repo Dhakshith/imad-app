@@ -28,7 +28,7 @@ var articleOne = {
                             </p>
                             <div>
                                 <p style="font-size:50px;">
-                                    <strong><b>Hi!This is my 1st article</b></strong>
+                                    <strong><b>Hi !!! This is my 1st article</b></strong>
                             </div>
                             <img id = 'pokemon' src="https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d063d2b775dee12a8cc73f05d7b9b589.png" class="img-medium"/>
                         </div>
