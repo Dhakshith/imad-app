@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleTwo = {
+var articleThree = {
     content: `<!DOCTYPE html>
 <html>
     <head>
@@ -40,10 +40,10 @@ var articleTwo = {
 function delTemplate (data) {
     var content = data.content;
     
-    var sTemplate = `
+    var aTemplate = `
         ${content}
     `;
-    return sTemplate;
+    return aTemplate;
 }
 
 
@@ -144,7 +144,7 @@ app.get('/article-2', function (req, res) {
   res.send(addTemplate(articleTwo));
 });
 app.get('/article-3', function (req, res) {
-  res.send(delTemplate(articleThree));
+  res.send(aTemplate(articleThree));
 });
   
 // Do not change port, otherwise your app won't run on IMAD servers
