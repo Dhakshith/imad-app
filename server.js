@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-    articleFour = {
+articleFour = {
         content: `
         <!DOCTYPE html>
                   <html>
@@ -150,16 +150,16 @@ app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/article-1', function (req, res) {
-  res.send(createTemplate(articles[articleOne]));
+  res.send(createTemplate[articleOne]);
 });
 app.get('/article-2', function (req, res) {
-  res.send(createTemplate(articles[articleTwo]));
+  res.send(createTemplate[articleTwo]);
 });
 app.get('/article-3', function (req, res) {
-  res.send(createTemplate(articles[articleThree]));
+  res.send(createTemplate[articleThree]);
 });
 app.get('/article-4', function (req, res) {
-  res.send(createTemplate(articles[articleFour]));
+  res.send(createTemplate[articleFour]);
 });
 
 var port = 80;
