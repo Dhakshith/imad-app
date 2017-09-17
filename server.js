@@ -32,7 +32,7 @@ var articleThree = {
             <p style="font-size:50px;">
                 <strong><b>Hi!This is my 1st article</b></strong>
         </div>
-        <img id = 'pokemon' src="https://s3-ap-southeast-2.amazonaws.com/images.assignment1.fit3140/anime/charizard/tumblr_mt8kfgi0TF1s29bhho1_500.gif" class="img-medium"/>
+        <img id = 'pokemon' src="https://s3-ap-southeast-2.amazonaws.com/images.assignment1.fit3140/anime/charizard/tumblr_mt8kfgi0TF1s29bhho1_500.gif" class="img-medium"/><br><br>
     </body>
 </html>`
 };
@@ -74,7 +74,7 @@ var articleTwo = {
             <p style="font-size:50px;">
                 <strong><b>Hi!This is my 1st article</b></strong>
         </div>
-        <img id = 'pokemon' src="http://25.media.tumblr.com/tumblr_maxdexHDGJ1qcm0wfo1_500.gif" class="img-medium"/>
+        <img id = 'pokemon' src="http://25.media.tumblr.com/tumblr_maxdexHDGJ1qcm0wfo1_500.gif" class="img-medium"/><br><br>
     </body>
 </html>`
 };
@@ -116,7 +116,7 @@ var articleOne = {
                                 <p style="font-size:50px;">
                                     <strong><b>Hi !!! This is my 1st article</b></strong>
                             </div>
-                            <img id = 'pokemon' src="https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d063d2b775dee12a8cc73f05d7b9b589.png" class="img-medium"/>
+                            <img id = 'pokemon' src="https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d063d2b775dee12a8cc73f05d7b9b589.png" class="img-medium"/><br><br>
                         </div>
                     </body>
               </html>`
