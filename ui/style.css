@@ -9,9 +9,7 @@ body {
     text-align: center;  
 }
 .container {
-    padding-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     max-width: 800px;
     margin: 0 auto;
     color: #FF732E;
