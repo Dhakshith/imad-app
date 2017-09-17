@@ -19,7 +19,7 @@ var articleOne = {
                             <div>
                                 <p style="font-size:37px;"><a href="/">Home</a>
                             </div>
-                            <p style="font-size:30px;color:red;font-family:aerial"><span id="datetime"></span></p>
+                            <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                             <script>
                                 var dt = new Date();
                                 document.getElementById('demo').innerHTML = Date();
