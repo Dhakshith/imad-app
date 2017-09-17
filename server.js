@@ -5,7 +5,8 @@ var app = express();
 app.use(morgan('combined'));
 var articles = {
     'articleFour' : {
-        content: `<!DOCTYPE html>
+        content: `
+        <!DOCTYPE html>
                   <html>
                         <head>    
                             <link href="/style.css" rel= "stylesheet" />
@@ -39,7 +40,7 @@ var articles = {
     },
     'articleThree' : {
         content: `
-                    <!DOCTYPE html>
+        <!DOCTYPE html>
                     <html>
                         <head>
                             <title>
@@ -70,7 +71,8 @@ var articles = {
                     </html>`
     },
     'articleTwo' : {
-        content: `<!DOCTYPE html>
+        content: `
+    <!DOCTYPE html>
     <html>
         <head>
             <title>
@@ -101,7 +103,8 @@ var articles = {
     </html>`
     },
     'articleOne' : {
-        content: `<!DOCTYPE html>
+        content: `
+        <!DOCTYPE html>
                   <html>
                         <head>    
                             <link href="/style.css" rel= "stylesheet" />
