@@ -3,8 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-var articles = {
-    'articleFour' : {
+    articleFour = {
         content: `
         <!DOCTYPE html>
                   <html>
@@ -37,8 +36,8 @@ var articles = {
                             </div>
                         </body>
                   </html>`
-    },
-    'articleThree' : {
+    };
+    articleThree = {
         content: `
         <!DOCTYPE html>
                     <html>
@@ -70,7 +69,7 @@ var articles = {
                         </body>
                     </html>`
     },
-    'articleTwo' : {
+    articleTwo = {
         content: `
     <!DOCTYPE html>
     <html>
@@ -102,7 +101,7 @@ var articles = {
         </body>
     </html>`
     },
-    'articleOne' : {
+    articleOne = {
         content: `
         <!DOCTYPE html>
                   <html>
@@ -136,7 +135,6 @@ var articles = {
                         </body>
                   </html>`
     }
-};
 
 function createTemplate (data) {
     var content = data.content;
@@ -151,10 +149,17 @@ app.get('/', function (req, res) {
 app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/:articleName', function (req, res) {
-  //articleName == any one article
-  var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
+app.get('/article-1', function (req, res) {
+  res.send(createTemplate(articles[articleOne]));
+});
+app.get('/article-2', function (req, res) {
+  res.send(createTemplate(articles[articleTwo]));
+});
+app.get('/article-3', function (req, res) {
+  res.send(createTemplate(articles[articleThree]));
+});
+app.get('/article-4', function (req, res) {
+  res.send(createTemplate(articles[articleFour]));
 });
 
 var port = 80;
