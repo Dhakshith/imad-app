@@ -19,9 +19,11 @@ var articleOne = {
                             <div>
                                 <p style="font-size:37px;"><a href="/">Home</a>
                             </div>
-                            <p style="font-size:30px;color:red"><span id="datetime"></span></p>
+                            <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                             <script>
-                                document.getElementById('demo').innerHTML = Date();
+                                var dt = new Date();
+                                var dt = new Date();
+                                document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
                             </script>
                             <hr/>
                             </p>
