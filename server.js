@@ -150,16 +150,16 @@ app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/article-1', function (req, res) {
-  res.send(createTemplate[articleOne]);
+  res.send(createTemplate(articleOne));
 });
 app.get('/article-2', function (req, res) {
-  res.send(createTemplate[articleTwo]);
+  res.send(createTemplate(articleTwo));
 });
 app.get('/article-3', function (req, res) {
-  res.send(createTemplate[articleThree]);
+  res.send(createTemplate(articleThree));
 });
 app.get('/article-4', function (req, res) {
-  res.send(createTemplate[articleFour]);
+  res.send(createTemplate(articleFour));
 });
 
 var port = 80;
