@@ -31,9 +31,9 @@ body {
     background-color: brown; /* Green */
     border: inset;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 70px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: overline underline;
     display: inline-block;
     font-size: 16px;
 }
