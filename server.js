@@ -10,6 +10,48 @@ var articleTwo = {
 <html>
     <head>
         <title>
+            Article-3 | Dhakshith
+        </title>
+        <link href="/style.css" rel= "stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+        <p style="font-size:75px;"><strong>Article-3 | Dhakshith</strong>
+        <meta name="viewport" content="width=device-width, initial+scale=1" />
+        <div>
+            <p style="font-size:37px;"><a href="/">Home</a>
+        </div>
+        <hr/>
+        <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
+                            <script>
+                                var dt = new Date();
+                                document.getElementById("datetime").innerHTML = "September 17 2017";
+                            </script>
+        <p id="demo"></p>
+        <div>
+            <p style="font-size:50px;">
+                <strong><b>Hi!This is my 1st article</b></strong>
+        </div>
+        <img id = 'pokemon' src="https://vignette.wikia.nocookie.net/pokemon/images/b/be/CharizardBack_XY.gif/revision/latest?cb=20140606125452" class="img-medium"/>
+    </body>
+</html>`
+};
+
+function delTemplate (data) {
+    var content = data.content;
+    
+    var sTemplate = `
+        ${content}
+    `;
+    return sTemplate;
+}
+
+
+var articleTwo = {
+    content: `<!DOCTYPE html>
+<html>
+    <head>
+        <title>
             Article-2 | Dhakshith
         </title>
         <link href="/style.css" rel= "stylesheet" />
@@ -100,6 +142,9 @@ app.get('/article-1', function (req, res) {
 });
 app.get('/article-2', function (req, res) {
   res.send(addTemplate(articleTwo));
+});
+app.get('/article-3', function (req, res) {
+  res.send(delTemplate(articleThree));
 });
   
 // Do not change port, otherwise your app won't run on IMAD servers
