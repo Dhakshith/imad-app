@@ -5,14 +5,13 @@ body {
 }
 
 .center {
-   margin-left: 0;
-   margin-right: 0;
+    text-align: center;  
 }
 .container {
     max-width: 800px;
     margin: 0 auto;
     color: #FF732E;
-    font-size: 40px;
+    font-size: 70px;
     font-family: ar destine;
 }
 .text-big {
@@ -24,5 +23,5 @@ body {
 }
 
 .img-medium {
-    height: 520px;
+    height: 400px;
 }
