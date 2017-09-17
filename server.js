@@ -14,7 +14,7 @@ var articleOne = {
                     <body>
                         <div class="container">                    
                             <p style="font-size:75px;"><strong>Article-1 | Dhakshith</strong>
-                            <meta name="viewport" content="width=device-width, initial+scale=1" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1" />
                             <div>
                                 <p style="font-size:37px;"><a href="/">Home</a>
                             </div>
