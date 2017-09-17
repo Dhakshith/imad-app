@@ -7,7 +7,13 @@ body {
 .center {
     text-align: center;
 }
-
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #FF732E;
+    font-size: 70px;
+    font-family: ar destine;
+}
 .text-big {
     font-size: 300%;
 }
