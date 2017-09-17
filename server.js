@@ -8,21 +8,25 @@ app.use(morgan('combined'));
 var articleTwo = {
     content: `<!DOCTYPE html>
 <html>
-    <link href="/ui/style.css" rel= "stylesheet" />
+    <head><title>Article-2 | Dhakshith</title><link href="/style.css" rel= "stylesheet" /></head>
     <body>
-        <p style="font-size:75px;"><strong>Article-1 | Dhakshith</strong>
-        <meta name="viewport" content="width=device-width, initial+scale=1" />
+        <p style="font-size:75px;"><strong>Article-2 | Dhakshith</strong>
+        <meta name="viewport" content="width=device-width, initial+scale=1" /> <div class="container">
         <div>
             <p style="font-size:37px;"><a href="/">Home</a>
         </div>
         <hr/>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+        <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
+                            <script>
+                                var dt = new Date();
+                                document.getElementById("datetime").innerHTML = "September 17 2017";
+                            </script>
         <p id="demo"></p>
         <div>
             <p style="font-size:50px;">
                 <strong><b>Hi!This is my 1st article</b></strong>
         </div>
-        <img id = 'pokemon' src="https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d063d2b775dee12a8cc73f05d7b9b589.png" class="img-medium"/>
+        <img id = 'pokemon' src="http://25.media.tumblr.com/tumblr_maxdexHDGJ1qcm0wfo1_500.gif" class="img-medium"/>
     </body>
 </html>`
 };
