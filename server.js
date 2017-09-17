@@ -22,7 +22,7 @@ var articleOne = {
                             <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                             <script>
                                 var dt = new Date();
-                                document.getElementById("datetime").innerHTML = Date();
+                                document.getElementById("datetime").innerHTML = Date() - "(India Standard Time)";
                             </script>
                             <hr/>
                             </p>
