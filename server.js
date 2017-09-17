@@ -3,7 +3,41 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-    articleThree = {
+var articles = {
+    'articleFour' : {
+        content: `<!DOCTYPE html>
+                  <html>
+                        <head>    
+                            <link href="/style.css" rel= "stylesheet" />
+                            <title>
+                                Article-4 | Dhakshith
+                            </title>
+                            <link href="style.css" rel="stylesheet" />
+                        </head>
+                        <body>
+                            <div class="container">                    
+                                <p style="font-size:75px;"><strong>Article-4 | Dhakshith</strong>
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <div>
+                                    <p style="font-size:37px;"><a href="/">Home</a>
+                                </div>
+                                <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
+                                <script>
+                                    var dt = new Date();
+                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                </script>
+                                <hr/>
+                                </p>
+                                <div>
+                                    <p style="font-size:50px;">
+                                        <strong><b>Hi !!! This is my 4th article</b></strong>
+                                </div>
+                                <img id = 'pokemon' src="https://media.giphy.com/media/bBIgzlc6cF2jC/giphy.gif" class="img-medium"/><br><br>
+                            </div>
+                        </body>
+                  </html>`
+    },
+    'articleThree' : {
         content: `
                     <!DOCTYPE html>
                     <html>
@@ -24,7 +58,7 @@ app.use(morgan('combined'));
                             <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                                 <script>
                                                     var dt = new Date();
-                                                    document.getElementById("datetime").innerHTML = "September 17 2017";
+                                                    document.getElementById("datetime").innerHTML = "September 18 2017";
                                                 </script>
                             <p id="demo"></p>
                             <div>
@@ -35,7 +69,7 @@ app.use(morgan('combined'));
                         </body>
                     </html>`
     },
-    articleTwo = {
+    'articleTwo' : {
         content: `<!DOCTYPE html>
     <html>
         <head>
@@ -55,7 +89,7 @@ app.use(morgan('combined'));
             <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 17 2017";
+                                    document.getElementById("datetime").innerHTML = "September 18 2017";
                                 </script>
             <p id="demo"></p>
             <div>
@@ -66,11 +100,11 @@ app.use(morgan('combined'));
         </body>
     </html>`
     },
-    articleOne = {
+    'articleOne' : {
         content: `<!DOCTYPE html>
                   <html>
                         <head>    
-                            <link href="/ui/style.css" rel= "stylesheet" />
+                            <link href="/style.css" rel= "stylesheet" />
                             <title>
                                 Article-1 | Dhakshith
                             </title>
@@ -86,7 +120,7 @@ app.use(morgan('combined'));
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 17 2017";
+                                    document.getElementById("datetime").innerHTML = "September 18 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -98,7 +132,9 @@ app.use(morgan('combined'));
                             </div>
                         </body>
                   </html>`
-    };
+    }
+};
+
 function createTemplate (data) {
     var content = data.content;
     var htmlTemplate = `
@@ -112,15 +148,12 @@ app.get('/', function (req, res) {
 app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/article-1', function (req, res) {
-  res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+  //articleName == any one article
+  var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
-app.get('/article-2', function (req, res) {
-  res.send(createTemplate(articleTwo));
-});
-app.get('/article-3', function (req, res) {
-  res.send(createTemplate(articleThree));
-});
+
 var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
