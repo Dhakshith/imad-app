@@ -21,7 +21,6 @@ var articleOne = {
                             </div>
                             <p style="font-size:30px;color:red"><span id="datetime"></span></p>
                             <script>
-                                var dt = new Date();
                                 document.getElementById('demo').innerHTML = Date();
                             </script>
                             <hr/>
