@@ -2,6 +2,41 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+var articleOne = {
+    content: `<!DOCTYPE html>
+              <html>
+                    <link href="/ui/style.css" rel= "stylesheet" />
+                    <body>
+                        <p style="font-size:75px;"><strong>Article-1 | Dhakshith</strong>
+                        <meta name="viewport" content="width=device-width, initial+scale=1" />
+                        <div>
+                            <p style="font-size:37px;"><a href="/">Home</a>
+                        </div>
+                        <p><span id="datetime"></span></p>
+                        <script>
+                            var dt = new Date();
+                            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                        </script>
+                        <hr/>
+                        </p>
+                        <div>
+                            <p style="font-size:50px;">
+                                <strong><b>Hi!This is my 1st article</b></strong>
+                        </div>
+                        <img id = 'pokemon' src="https://res.cloudinary.com/lmn/image/upload/fl_lossy,q_80/f_auto/v1/gameskinny/d063d2b775dee12a8cc73f05d7b9b589.png" class="img-medium"/>
+                    </body>
+              </html>`
+};
+
+function createTemplate (data) {
+    var content = data.content;
+    
+    var htmlTemplate = `
+        ${content}
+    `;
+    return htmlTemplate;
+}
+
 var app = express();
 app.use(morgan('combined'));
 
@@ -10,6 +45,9 @@ app.get('/', function (req, res) {
 });
 app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+app.get('/article-1', function (req, res) {
+  res.send(createTemplate(articleOne));
 });
   
 // Do not change port, otherwise your app won't run on IMAD servers
