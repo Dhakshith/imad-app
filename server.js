@@ -73,7 +73,7 @@ var articleOne = {
 function createTemplate (data) {
     var content = data.content;
     
-    var hmlTemplate = `
+    var htmlTemplate = `
         ${content}
     `;
     return htmlTemplate;
