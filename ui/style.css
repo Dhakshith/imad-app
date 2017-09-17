@@ -5,8 +5,8 @@ body {
 }
 
 .center {
-   margin: 0 auto;
-    
+   margin-left: 10px;
+  margin-right: 10px;
 }
 .container {
     max-width: 800px;
