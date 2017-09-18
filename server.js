@@ -58,6 +58,40 @@ profile = {
 </html>
 `
 };
+articleEight = {
+    content: `
+        <!DOCTYPE html>
+                  <html>
+                        <head>    
+                            <link href="/style.css" rel= "stylesheet" />
+                            <title>
+                                Article-8 | Dhakshith
+                            </title>
+                            <link href="style.css" rel="stylesheet" />
+                        </head>
+                        <body>
+                            <div class="container">                    
+                                <p style="font-size:75px;"><strong>Article-8 | Dhakshith</strong>
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <div>
+                                    <p style="font-size:37px;"><a href="/">Home</a>
+                                </div>
+                                <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
+                                <script>
+                                    var dt = new Date();
+                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                </script>
+                                <hr/>
+                                </p>
+                                <div>
+                                    <p style="font-size:50px;">
+                                        <strong><b>Hi !!! This is my 8th article</b></strong>
+                                </div>
+                                <img id = 'pokemon' src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/aggron-2.gif" width="300px" /><br><br>
+                            </div>
+                        </body>
+                  </html>`
+};
 articleSeven = {
     content: `
         <!DOCTYPE html>
@@ -87,7 +121,7 @@ articleSeven = {
                                     <p style="font-size:50px;">
                                         <strong><b>Hi !!! This is my 7th article</b></strong>
                                 </div>
-                                <img id = 'pokemon' src="https://pldh.net/media/pokemon/gen6/xy-animated-shiny/145.gif" width="300px" class="img-medium"/><br><br>
+                                <img id = 'pokemon' src="https://pldh.net/media/pokemon/gen6/xy-animated-shiny/145.gif" width="300px" /><br><br>
                             </div>
                         </body>
                   </html>`
@@ -121,7 +155,7 @@ articleSix = {
                                     <p style="font-size:50px;">
                                         <strong><b>Hi !!! This is my 6th article</b></strong>
                                 </div>
-                                <img id = 'pokemon' src="https://orig00.deviantart.net/cc76/f/2013/074/5/2/xerneas_animated_sprite_by_ekurepu-d5y465y.gif" width="300px" class="img-medium"/><br><br>
+                                <img id = 'pokemon' src="https://orig00.deviantart.net/cc76/f/2013/074/5/2/xerneas_animated_sprite_by_ekurepu-d5y465y.gif" width="300px" /><br><br>
                             </div>
                         </body>
                   </html>`
