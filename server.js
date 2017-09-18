@@ -8,7 +8,7 @@ profile = {
     <!DOCTYPE html>
 <html>
     <head>
-    <link href="/ui/style.css" rel= "stylesheet" />
+    <link href="/style.css" rel="stylesheet"><title>My Profile</title>
     </head>
     <body><div class="container">
             <div>
