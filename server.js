@@ -3,6 +3,113 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
+style = {
+    content: `
+    body {
+    font-size: 20px;
+    font-family: ar destine;
+    background-color: #66FFAB;
+}
+
+.center {
+    text-align: center;  
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #FF732E;
+    font-size: 20px;
+    font-family: ar destine;
+}
+.text-big {
+    font-size: 300%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 400px;
+}
+.button {
+    background-color: brown; /* Green */
+    border: inset;
+    color: white;
+    padding: 10px 70px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+`
+};
+index = {
+        content: `
+        <!DOCTYPE html>
+<html>
+    <head>
+        <link href="/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Dhakshith's IMAD app</title>
+    </head>
+    <body bgcolor="Blue" class="body">
+       <div class="container">
+        <div class="center text-big bold">
+            <p style="color:brown;"></p><p style="font-size:50px;">Hello.
+        </p></div>
+        <div>
+            <img id="pokemon" src="https://www.primagames.com/media/images/news/Pokemon-Go-big.jpg" class="img-medium">
+        </div>
+        <br>
+        <div class="center text-big bold">
+            <p style="color:brown;">
+                This is Dhakshith's 1st webapp!
+            </p>
+        </div>
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+        <hr>
+        <h1 style="font-size:90px;color:green">My articles are as follows:</h1>
+        <div class="button">
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-1">
+    <input type="submit" value="article One" />
+</form><br>
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-2">
+    <input type="submit" value="article Two" />
+</form><br>
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-3">
+    <input type="submit" value="article Three" />
+</form><br>
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-4">
+    <input type="submit" value="article Four" />
+</form><br>
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-5">
+    <input type="submit" value="article Five" />
+</form><br>
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-6">
+    <input type="submit" value="article Six" />
+</form><br>
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-7">
+    <input type="submit" value="article Seven" />
+</form><br>
+        <form action="http://sdhakshithraam.imad.hasura-app.io/article-8">
+    <input type="submit" value="article Eight" />
+</form></div>
+        <hr>
+        <h1 style="font-size:90px;color:green">
+            This is my Profile:
+        </h1>
+        <div class="button"><form action="http://sdhakshithraam.imad.hasura-app.io/MyProfile">
+    <input type="submit" value="My Profile" />
+</form></div>
+        <hr>
+       </div>
+    </body>
+</html>
+    `
+    };
 articleFour = {
         content: `
         <!DOCTYPE html>
@@ -37,7 +144,7 @@ articleFour = {
                         </body>
                   </html>`
     };
-    articleThree = {
+articleThree = {
         content: `
         <!DOCTYPE html>
                     <html>
@@ -69,7 +176,7 @@ articleFour = {
                         </body>
                     </html>`
     },
-    articleTwo = {
+articleTwo = {
         content: `
     <!DOCTYPE html>
     <html>
@@ -101,7 +208,7 @@ articleFour = {
         </body>
     </html>`
     },
-    articleOne = {
+articleOne = {
         content: `
         <!DOCTYPE html>
                   <html>
@@ -134,8 +241,7 @@ articleFour = {
                             </div>
                         </body>
                   </html>`
-    }
-
+    };
 function createTemplate (data) {
     var content = data.content;
     var htmlTemplate = `
@@ -144,10 +250,10 @@ function createTemplate (data) {
         return htmlTemplate;
     }
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.send(createTemplate(index));
 });
 app.get('/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.send(createTemplate(style));
 });
 app.get('/article-1', function (req, res) {
   res.send(createTemplate(articleOne));
@@ -161,7 +267,6 @@ app.get('/article-3', function (req, res) {
 app.get('/article-4', function (req, res) {
   res.send(createTemplate(articleFour));
 });
-
 var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
