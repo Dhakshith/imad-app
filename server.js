@@ -43,7 +43,7 @@ profile = {
 
             <script type="text/javascript" src="/main.js">
             </script>
-            <div style="color: #80FF80"><ul>
+            <div style="color: #80FF80;font-size: 20px"><ul>
                 <li>
                     name1
                 </li>
