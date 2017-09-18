@@ -11,9 +11,8 @@ profile = {
     <link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/png" src="https://vignette2.wikia.nocookie.net/leonhartimvu/images/d/d8/145_Zapdos_DW.png/revision/latest?cb=20131218041858" />
     </head>
     <body><div class="container">
-            <h3 style="font-size:80px;color:brown>Profile</h3><hr>
             <div>
-                <img id = 'pokemon' href="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" height="400px" />
+                <img id = 'pokemon' src="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" height="400px" />
             </div><hr>
             <h1 style="font-size:70px;color:green">
                 Personal
