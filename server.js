@@ -8,7 +8,7 @@ profile = {
     <!DOCTYPE html>
 <html>
     <head>
-    <link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/png" src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/aggron-2.gif" width="50px" />
+    <link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/png" src="https://vignette2.wikia.nocookie.net/leonhartimvu/images/d/d8/145_Zapdos_DW.png/revision/latest?cb=20131218041858" width="50px" />
     </head>
     <body><div class="container">
             <div>
