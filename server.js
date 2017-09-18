@@ -40,7 +40,7 @@ profile = {
             </h2>
             <div class = "Footer">
                 <h1>
-                    This button <button id="counter" style="background-color: brown;padding: 15px 32px;"><p style="color: white;font-size: 17.5px">Click Me !</button> has been clicked <span id="count">0</span> times ! ! !
+                    This button <button id="counter" style="background-color: brown;padding: 15px 32px;"><p style="color: white;font-size: 17.5px">Click Me !</button> has been clicked <span id="count"><p style="font-size:30px;color:black">0</p></span> times ! ! !
                 </h1>    
             </div>
             <hr/>
