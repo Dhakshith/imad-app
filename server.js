@@ -11,6 +11,10 @@ profile = {
     <link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/png" src="https://vignette2.wikia.nocookie.net/leonhartimvu/images/d/d8/145_Zapdos_DW.png/revision/latest?cb=20131218041858" />
     </head>
     <body><div class="container">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <div>
+                <p style="font-size:37px;"><a href="/">Home</a>
+            </div>
             <div>
                 <img id = 'pokemon' src="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" height="400px" />
             </div><hr>
@@ -63,11 +67,10 @@ articleEight = {
         <!DOCTYPE html>
                   <html>
                         <head>    
-                            <link href="/style.css" rel= "stylesheet" />
                             <title>
                                 Article-8 | Dhakshith
                             </title>
-                            <link href="style.css" rel="stylesheet" />
+                            <link href="/style.css" rel="stylesheet" />
                         </head>
                         <body>
                             <div class="container">                    
