@@ -37,5 +37,5 @@ body {
     font-size: 20px;
 }
 .pokemon {
-    text-align: left;  
+    margin-left: 0;
 }
