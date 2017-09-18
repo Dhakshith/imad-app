@@ -175,7 +175,7 @@ articleThree = {
                             <img id = 'pokemon' src="https://s3-ap-southeast-2.amazonaws.com/images.assignment1.fit3140/anime/charizard/tumblr_mt8kfgi0TF1s29bhho1_500.gif" class="img-medium"/><br><br>
                         </body>
                     </html>`
-    },
+    };
 articleTwo = {
         content: `
     <!DOCTYPE html>
@@ -207,7 +207,7 @@ articleTwo = {
             <img id = 'pokemon' src="http://25.media.tumblr.com/tumblr_maxdexHDGJ1qcm0wfo1_500.gif" class="img-medium"/><br><br>
         </body>
     </html>`
-    },
+    };
 articleOne = {
         content: `
         <!DOCTYPE html>
