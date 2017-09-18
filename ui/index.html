@@ -11,6 +11,8 @@
             <p style="color:brown;"></p><p style="font-size:50px;">Hello.
         </p></div>
         </div><div>
+            <button id="btn1">Start Animation</button>
+<button id="btn2">Stop animation</button>
             <img id="pokemon" src="https://static.tumblr.com/55f08396be638398f7fdd40824de6dd2/k5mcdpu/eVKnuf0k1/tumblr_static_tumblr_static_b9jodf0zm54cwokwg80o8gcs0_640.gif" class="img-medium">
         </div><div class="container">
         <br>
@@ -57,6 +59,13 @@
 </form></div>
         <hr>
         <img id="box" src ="https://thumbs.gfycat.com/SparseNauticalDuckling-max-1mb.gif" height= 400px width= 900px>
-       </div>
+       </div><script>$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#box").animate({height: "550px"});
+    });
+    $("#btn2").click(function(){
+        $("#box").animate({height: "100px"});
+    });
+});</script>
     </body>
 </html>
