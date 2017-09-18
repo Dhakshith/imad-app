@@ -10,7 +10,7 @@ profile = {
     <head>
     <link href="/ui/style.css" rel= "stylesheet" />
     </head>
-    <body>
+    <body><div class="container">
             <div>
                 <img id = 'pokemon' src="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" height="400px" />
             </div>
@@ -53,7 +53,7 @@ profile = {
                 <li>
                     name3
                 </li>
-                </ol>
+                </ol></div>
     </body>
 </html>
 `
