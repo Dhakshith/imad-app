@@ -3,6 +3,74 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
+articleSix ={
+    content: `
+        <!DOCTYPE html>
+                  <html>
+                        <head>    
+                            <link href="/style.css" rel= "stylesheet" />
+                            <title>
+                                Article-6 | Dhakshith
+                            </title>
+                            <link href="style.css" rel="stylesheet" />
+                        </head>
+                        <body>
+                            <div class="container">                    
+                                <p style="font-size:75px;"><strong>Article-6 | Dhakshith</strong>
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <div>
+                                    <p style="font-size:37px;"><a href="/">Home</a>
+                                </div>
+                                <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
+                                <script>
+                                    var dt = new Date();
+                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                </script>
+                                <hr/>
+                                </p>
+                                <div>
+                                    <p style="font-size:50px;">
+                                        <strong><b>Hi !!! This is my 6th article</b></strong>
+                                </div>
+                                <img id = 'pokemon' src="https://media.giphy.com/media/bBIgzlc6cF2jC/giphy.gif" class="img-medium"/><br><br>
+                            </div>
+                        </body>
+                  </html>`
+};
+articleFive ={
+    content: `
+        <!DOCTYPE html>
+                  <html>
+                        <head>    
+                            <link href="/style.css" rel= "stylesheet" />
+                            <title>
+                                Article-5 | Dhakshith
+                            </title>
+                            <link href="style.css" rel="stylesheet" />
+                        </head>
+                        <body>
+                            <div class="container">                    
+                                <p style="font-size:75px;"><strong>Article-5 | Dhakshith</strong>
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <div>
+                                    <p style="font-size:37px;"><a href="/">Home</a>
+                                </div>
+                                <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
+                                <script>
+                                    var dt = new Date();
+                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                </script>
+                                <hr/>
+                                </p>
+                                <div>
+                                    <p style="font-size:50px;">
+                                        <strong><b>Hi !!! This is my 5th article</b></strong>
+                                </div>
+                                <img id = 'pokemon' src="https://media.giphy.com/media/bBIgzlc6cF2jC/giphy.gif" class="img-medium"/><br><br>
+                            </div>
+                        </body>
+                  </html>`
+};
 articleFour = {
         content: `
         <!DOCTYPE html>
@@ -162,6 +230,12 @@ app.get('/article-3', function (req, res) {
 });
 app.get('/article-4', function (req, res) {
   res.send(createTemplate(articleFour));
+});
+app.get('/article-5', function (req, res) {
+  res.send(createTemplate(articleFive));
+});
+app.get('/article-6', function (req, res) {
+  res.send(createTemplate(articleSix));
 });
 var port = 80;
 app.listen(port, function () {
