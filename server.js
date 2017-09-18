@@ -3,6 +3,40 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
+articleSeven ={
+    content: `
+        <!DOCTYPE html>
+                  <html>
+                        <head>    
+                            <link href="/style.css" rel= "stylesheet" />
+                            <title>
+                                Article-7 | Dhakshith
+                            </title>
+                            <link href="style.css" rel="stylesheet" />
+                        </head>
+                        <body>
+                            <div class="container">                    
+                                <p style="font-size:75px;"><strong>Article-7 | Dhakshith</strong>
+                                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                                <div>
+                                    <p style="font-size:37px;"><a href="/">Home</a>
+                                </div>
+                                <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
+                                <script>
+                                    var dt = new Date();
+                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                </script>
+                                <hr/>
+                                </p>
+                                <div>
+                                    <p style="font-size:50px;">
+                                        <strong><b>Hi !!! This is my 7th article</b></strong>
+                                </div>
+                                <img id = 'pokemon' src="https://pldh.net/media/pokemon/gen6/xy-animated-shiny/145.gif" width="300px" class="img-medium"/><br><br>
+                            </div>
+                        </body>
+                  </html>`
+};
 articleSix ={
     content: `
         <!DOCTYPE html>
@@ -32,7 +66,7 @@ articleSix ={
                                     <p style="font-size:50px;">
                                         <strong><b>Hi !!! This is my 6th article</b></strong>
                                 </div>
-                                <img id = 'pokemon' src="https://media.giphy.com/media/bBIgzlc6cF2jC/giphy.gif" class="img-medium"/><br><br>
+                                <img id = 'pokemon' src="https://orig00.deviantart.net/cc76/f/2013/074/5/2/xerneas_animated_sprite_by_ekurepu-d5y465y.gif" width="300px" class="img-medium"/><br><br>
                             </div>
                         </body>
                   </html>`
@@ -66,7 +100,7 @@ articleFive ={
                                     <p style="font-size:50px;">
                                         <strong><b>Hi !!! This is my 5th article</b></strong>
                                 </div>
-                                <img id = 'pokemon' src="https://media.giphy.com/media/bBIgzlc6cF2jC/giphy.gif" class="img-medium"/><br><br>
+                                <img id = 'pokemon' src="https://vignette.wikia.nocookie.net/pokemon/images/a/ae/Yveltal_Shiny_XY.gif/revision/latest?cb=20140707225121" class="img-medium"/><br><br>
                             </div>
                         </body>
                   </html>`
@@ -236,6 +270,12 @@ app.get('/article-5', function (req, res) {
 });
 app.get('/article-6', function (req, res) {
   res.send(createTemplate(articleSix));
+});
+app.get('/article-7', function (req, res) {
+  res.send(createTemplate(articleSeven));
+});
+app.get('/article-8', function (req, res) {
+  res.send(createTemplate(articleEight));
 });
 var port = 80;
 app.listen(port, function () {
