@@ -400,7 +400,7 @@ app.get('/Submit-Name/:Name', function (req, res) {
     var name = req.params.name;
     names.push(name);
     //JSON: Java Script Object Notation
-    res.send(JSON.srtingify(names));
+    res.send(JSON.stringify(names));
 });
 var port = 80;
 app.listen(port, function () {
