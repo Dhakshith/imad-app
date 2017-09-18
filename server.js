@@ -3,7 +3,62 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-articleSeven ={
+profile = {
+    content: `
+    <!DOCTYPE html>
+<html>
+    <head>
+    <link href="/ui/style.css" rel= "stylesheet" />
+    </head>
+    <body>
+            <div>
+                <img id = 'pokemon' src="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" class="img-medium"/>
+            </div>
+            <h1 style="font-size:70px;color:green">
+                Personal
+            </h1>
+            <div>
+                <h1 style="color:blue">
+                    Hello Everyone!My name is Dhakshith Raam!!!
+                </h1>
+            </div>
+                <h1 style="font-size:70px;color:green">
+                    Professional
+                </h1>
+            <div>
+                <h1 style="color:blue">
+                    I work at Vidhya Niketan Public School!!!
+                </h1>
+            </div>
+            <hr/>
+            <h2 style="color:green">
+                A SIMPLE CLICKED TIMES COUNTER:
+            </h2>
+            <div class = "Footer">
+                <h1>
+                    This button <button id="counter">Click Me !</button> has been clicked <span id="count">0</span> times...
+                </h1>    
+            </div>
+            <hr/>
+
+            <script type="text/javascript" src="/main.js">
+            </script>
+            <ol>
+                <li>
+                    name1
+                </li>
+                <li>
+                    name2
+                </li>
+                <li>
+                    name3
+                </li>
+                </ol>
+    </body>
+</html>
+`
+};
+articleSeven = {
     content: `
         <!DOCTYPE html>
                   <html>
@@ -37,7 +92,7 @@ articleSeven ={
                         </body>
                   </html>`
 };
-articleSix ={
+articleSix = {
     content: `
         <!DOCTYPE html>
                   <html>
@@ -71,7 +126,7 @@ articleSix ={
                         </body>
                   </html>`
 };
-articleFive ={
+articleFive = {
     content: `
         <!DOCTYPE html>
                   <html>
@@ -276,6 +331,9 @@ app.get('/article-7', function (req, res) {
 });
 app.get('/article-8', function (req, res) {
   res.send(createTemplate(articleEight));
+});
+app.get('/MyProfile', function (req, res) {
+    res.send(createTemplate(profile));
 });
 var port = 80;
 app.listen(port, function () {
