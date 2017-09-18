@@ -5,7 +5,10 @@ function moveRight () {
     marginLeft = marginLeft + 0.5;
     img.style.marginLeft = marginLeft + 'px';
 }
-img.onclick = function () {
+function Hey() {
     var interval = setInterval(moveRight, 9);
-    $("#pokemon").stop();
-};
+}
+function Ho()
+{
+        $("#pokemon").stop();
+}
