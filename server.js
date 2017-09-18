@@ -3,48 +3,6 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-style = {
-    content: `
-    body {
-    font-size: 20px;
-    font-family: ar destine;
-    background-color: #66FFAB;
-}
-
-.center {
-    text-align: center;  
-}
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #FF732E;
-    font-size: 20px;
-    font-family: ar destine;
-}
-.text-big {
-    font-size: 300%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 400px;
-}
-.button {
-    background-color: brown; /* Green */
-    border: inset;
-    color: white;
-    padding: 10px 70px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-}
-`
-};
 index = {
         content: `
         <!DOCTYPE html>
@@ -253,7 +211,7 @@ app.get('/', function (req, res) {
   res.send(createTemplate(index));
 });
 app.get('/style.css', function (req, res) {
-  res.send(createTemplate(style));
+  res.sendFile(path.join(style.css));
 });
 app.get('/article-1', function (req, res) {
   res.send(createTemplate(articleOne));
