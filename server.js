@@ -8,7 +8,7 @@ profile = {
     <!DOCTYPE html>
 <html>
     <head>
-    <link href="/style.css" rel="stylesheet"><title>My Profile</title>
+    <link href="/style.css" rel="stylesheet"><title><img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/aggron-3.gif" height="400px">My Profile</title>
     </head>
     <body><div class="container">
             <div>
