@@ -43,7 +43,7 @@ profile = {
 
             <script type="text/javascript" src="/main.js">
             </script>
-            <ul>
+            <div style="color: #80FF80"><ul>
                 <li>
                     name1
                 </li>
@@ -53,7 +53,7 @@ profile = {
                 <li>
                     name3
                 </li>
-                </ul></div>
+                </ul></div></div>
     </body>
 </html>
 `
