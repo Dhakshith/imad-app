@@ -1,5 +1,5 @@
 console.log('Loaded!');
-$("pokemon").click(function(){
+$("img").click(function(){
     var div = $("div");
     div.animate({height: '300px', opacity: '0.4'}, "slow");
     div.animate({width: '300px', opacity: '0.8'}, "slow");
