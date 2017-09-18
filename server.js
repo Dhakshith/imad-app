@@ -369,6 +369,11 @@ app.get('/article-8', function (req, res) {
 app.get('/MyProfile', function (req, res) {
     res.send(createTemplate(profile));
 });
+var counter = 0;
+app.get('/Counter', function (req, res) {
+    counter = counter + 1;
+    res.send(counter.toString());
+});
 var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
