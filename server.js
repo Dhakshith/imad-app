@@ -71,6 +71,7 @@ articleEight = {
                                 Article-8 | Dhakshith
                             </title>
                             <link href="/style.css" rel="stylesheet" />
+                            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                         </head>
                         <body>
                             <div class="container">                    
@@ -105,6 +106,7 @@ articleSeven = {
                                 Article-7 | Dhakshith
                             </title>
                             <link href="style.css" rel="stylesheet" />
+                            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                         </head>
                         <body>
                             <div class="container">                    
@@ -139,6 +141,7 @@ articleSix = {
                                 Article-6 | Dhakshith
                             </title>
                             <link href="style.css" rel="stylesheet" />
+                            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                         </head>
                         <body>
                             <div class="container">                    
@@ -173,6 +176,7 @@ articleFive = {
                                 Article-5 | Dhakshith
                             </title>
                             <link href="style.css" rel="stylesheet" />
+                            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                         </head>
                         <body>
                             <div class="container">                    
@@ -207,6 +211,7 @@ articleFour = {
                                 Article-4 | Dhakshith
                             </title>
                             <link href="style.css" rel="stylesheet" />
+                            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                         </head>
                         <body>
                             <div class="container">                    
@@ -240,6 +245,7 @@ articleThree = {
                                 Article-3 | Dhakshith
                             </title>
                             <link href="/style.css" rel= "stylesheet" />
+                            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                         </head>
                         <body>
                             <div class="container">
@@ -272,6 +278,7 @@ articleTwo = {
                 Article-2 | Dhakshith
             </title>
             <link href="/style.css" rel= "stylesheet" />
+            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
         </head>
         <body>
             <div class="container">
@@ -301,6 +308,7 @@ articleOne = {
                   <html>
                         <head>    
                             <link href="/style.css" rel= "stylesheet" />
+                            <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                             <title>
                                 Article-1 | Dhakshith
                             </title>
@@ -375,7 +383,7 @@ app.get('/MyProfile', function (req, res) {
 var counter = 0;
 app.get('/Counter', function (req, res) {
     counter = counter + 1;
-    res.send(counter.toString());
+    res.send(`<h3 style="color:red;font-size:100px">counter.toString()</h3>`);
 });
 var port = 80;
 app.listen(port, function () {
