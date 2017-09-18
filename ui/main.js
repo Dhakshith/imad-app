@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var img = document.getElementById('pokemon');
 img.onclick = function () {
-        img.style.marginLeft = '100px';
-        img.style.marginRight = '100px';
+        img.animate.style.marginLeft = '200px';
+        img.animate.style.marginRight = '100px';
 };
