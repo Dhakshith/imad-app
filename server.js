@@ -397,7 +397,7 @@ app.get('/Counter', function (req, res) {
 });
 var names = [];
 app.get('/Submit-Name/:Name', function (req, res) {
-    var name = req.params.name;
+    var name = req.query.name;
     names.push(name);
     //JSON: Java Script Object Notation
     res.send(JSON.stringify(names));
