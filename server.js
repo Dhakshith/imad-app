@@ -383,7 +383,7 @@ app.get('/MyProfile', function (req, res) {
 var counter = 0;
 app.get('/Counter', function (req, res) {
     counter = counter + 1;
-    res.send(`<h3 style="color:red;font-size:100px">counter.toString()</h3>`);
+    res.send(`<h3 style="color:red;font-size:100px;text-align:center;padding:0 auto">counter.toString()</h3>`);
 });
 var port = 80;
 app.listen(port, function () {
