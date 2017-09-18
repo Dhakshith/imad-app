@@ -1,5 +1,5 @@
 console.log('Loaded!');
 var img = document.getElementById('pokemon');
 img.onclick = function () {
-        img.style.marginLeft = '470px';
+        img.style.marginLeft = '450px';
 };
