@@ -12,7 +12,7 @@ profile = {
     </head>
     <body>
             <div>
-                <img id = 'pokemon' src="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" class="img-medium"/>
+                <img id = 'pokemon' src="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" height="400px" />
             </div>
             <h1 style="font-size:70px;color:green">
                 Personal
