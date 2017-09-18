@@ -13,7 +13,7 @@ profile = {
     <body><div class="container">
             <div>
                 <img id = 'pokemon' src="http://images.clipartpanda.com/boy-20clip-20art-RiAykqLLT.jpeg" height="400px" />
-            </div>
+            </div><hr>
             <h1 style="font-size:70px;color:green">
                 Personal
             </h1>
@@ -21,7 +21,7 @@ profile = {
                 <h1 style="color:blue">
                     Hello Everyone!My name is Dhakshith Raam!!!
                 </h1>
-            </div>
+            </div><hr>
                 <h1 style="font-size:70px;color:green">
                     Professional
                 </h1>
