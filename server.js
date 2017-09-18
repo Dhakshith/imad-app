@@ -10,7 +10,8 @@ profile = {
     <head>
     <link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
     </head>
-    <body><div class="container">
+    <body>
+        <div class="container">
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <div>
                 <p style="font-size:37px;"><a href="/">Home</a>
@@ -44,20 +45,18 @@ profile = {
                 </h1>    
             </div>
             <hr/>
-
+            <input type="text" id="name" placeholder="name"></input>
+            <input type="submit" value="Submit"></input>
             <script type="text/javascript" src="/main.js">
             </script>
-            <div style="color: #FF0A0E;font-size: 30px"><ul>
-                <li>
-                    name1
-                </li>
-                <li>
-                    name2
-                </li>
-                <li>
-                    name3
-                </li>
-                </ul></div></div>
+            <div style="color: #FF0A0E;font-size: 30px">
+                <ul>
+                    <li>name1</li>
+                    <li>name2</li>
+                    <li>name3</li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
 `
