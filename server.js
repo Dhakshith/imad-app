@@ -423,7 +423,7 @@ app.get('/article-9', function (req, res) {
       if (err) {
           res.status(500).send(JSON.stringify(result.rows));
       } else {
-          res.send(result.rows);
+          res.send(JSON.stringify(result.rows));
       }
   });
 });
