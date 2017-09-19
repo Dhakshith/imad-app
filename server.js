@@ -421,7 +421,7 @@ app.get('/article-8', function (req, res) {
 app.get('/article-9', function (req, res) {
     Pool.query(`SELECT name FROM "Articles" where title = 'Article-5'`, function (err, result){
       if (err) {
-          res.status(500).send(err.toString());
+          res.status(500).send(JSON.stringify(result));
       } else {
           res.send(result.rows);
       }
