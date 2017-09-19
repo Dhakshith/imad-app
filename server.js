@@ -386,11 +386,16 @@ var Pool = new Pool(config);
 app.get('/Database', function (req, res) {
   //make a select request
   //return a response with the results
-  Pool.query('SELECT * FROM "TestApp"', function (err, result){
+  Pool.query(`select name from "Articles" where title = 'Title'`, function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
-          res.send(JSON.stringify(result.rows));
+          if (result.rows.length === 0) {
+              res.status(404).send('Sorry! Article Not Found!');
+          } else {
+              var articlesData = result.rows[1];
+              res.send(createTemplate(articlesData));
+          }
       }
   });
 });
