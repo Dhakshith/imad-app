@@ -421,9 +421,9 @@ app.get('/article-8', function (req, res) {
 app.get('/article-9', function (req, res) {
     Pool.query(`SELECT name FROM "Articles" where title = 'Article-1'`, function (err, result){
       if (err) {
-          res.status(500).send(err.toString(name));
+          res.status(500).send(err.toString());
       } else {
-          res.send(name);
+          res.send(result);
       }
   });
 });
