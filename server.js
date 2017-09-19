@@ -426,7 +426,7 @@ app.get('/article-9', function (req, res) {
           if (result.rows.length === 0) {
               res.status(404).send('Sorry! Article Not Found!');
           } else {
-              var articlesData = result.rows[0];
+              var articlesData = result.rows[1];
               res.send(createTemplate(articlesData));
           }
       }
