@@ -386,11 +386,11 @@ var Pool = new Pool(config);
 app.get('/Database', function (req, res) {
   //make a select request
   //return a response with the results
-  Pool.query(`SELECT name FROM "Articles" where title = 'Title'`, function (err, result){
+  Pool.query('SELECT * FROM "TestApp"', function (err, result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
-          res.send(JSON.stringify(result));
+          res.send(JSON.stringify(result.rows));
       }
   });
 });
@@ -419,16 +419,11 @@ app.get('/article-8', function (req, res) {
   res.send(createTemplate(articleEight));
 });
 app.get('/article-9', function (req, res) {
-  Pool.query(`select name from "Articles" where title = 'Title'`, function (err, result) {
+    Pool.query(`SELECT name FROM "Articles" where title = 'Article-1'`, function (err, result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
-          if (result.rows.length === 0) {
-              res.status(404).send('Sorry! Article Not Found!');
-          } else {
-              var articlesData = result.rows[1];
-              res.send(createTemplate(articlesData));
-          }
+          res.send(JSON.stringify(result.columns));
       }
   });
 });
