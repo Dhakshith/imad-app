@@ -37,3 +37,6 @@ body {
     display: inline-block;
     font-size: 20px;
 }
+.a {
+    list-style-image: url('sqpurple.gif');
+}
