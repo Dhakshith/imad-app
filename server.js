@@ -383,7 +383,7 @@ function hash(input, salt) {
     
 }
 app.get('/hash/:input', function (req, res) {
-  var hashedString = hash(req.params.input, 'th');
+  var hashedString = hash(req.params.input, 'this-is-some-random-array-string-list');
   res.send(hashedString);
 });
 app.get('/main.js', function (req, res) {
