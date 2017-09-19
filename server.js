@@ -419,7 +419,7 @@ app.get('/article-8', function (req, res) {
   res.send(createTemplate(articleEight));
 });
 app.get('/article-9', function (req, res) {
-  Pool.query("select * from articles where id = '1'", function (err, result) {
+  Pool.query(`select * from "Articles" where title = 'abc'`, function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
