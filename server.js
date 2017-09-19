@@ -96,7 +96,7 @@ articleEight = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                    document.getElementById("datetime").innerHTML = "September 19 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -131,7 +131,7 @@ articleSeven = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                    document.getElementById("datetime").innerHTML = "September 19 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -166,7 +166,7 @@ articleSix = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                    document.getElementById("datetime").innerHTML = "September 19 2017";
                                 </script>
                                 <hr/>
                                 </p>
