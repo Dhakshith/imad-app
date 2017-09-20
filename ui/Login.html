@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="/style.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" height="8px" />
-        <title>Login</title>
+        <title>
+            Login
+        </title>
     </head>
     <body>
-        <div class="container" bgcolor="#4dffff">
-            <div class="header" style="font-size:80px;color:#3333ff;background-color: brown;border: inset;color: white;">
+        <div class="container">
+            <h1 class="login">
                 Login
-            </div>
-            <hr>
+            </h1>
             <form name="login">
-                <input style="color:#80334C;font-size:30px" type="text" id="username" placeholder="Username"><br><br><br>
-                <input style="color:#8CFFAB;font-size:30px" type="password" id="password" placeholder="Password"><br><br><br>
-                <input style="color:#FFB842;font-size:30px" type="submit" onclick="Login()" id="submit_btn" Value="Submit">
-                <br><br><br>
+                <input style="background-color: brown;border: inset;color: white;padding: 10px 70px;text-align: center;display: inline-block;font-size: 20px;" type="text" name="userid" placeholder="Username"/>
+                <input style="background-color: brown; /* Green */border: inset;color: white;padding: 10px 70px;text-align: center;display: inline-block;font-size: 20px;" type="password" name="pswrd" placeholder="Password"/>
+                <input type="button" onclick="check(this.form)" value="Login"/>
+                <input type="reset" value="Cancel"/>
             </form>
-            <script>
-                function Login() {
-                    if (form.username.value == "Dhakshith" & form.password.value == "Dhakshith") 
-                    {
-                        alert("Successfully Logged in!");
-                    } 
-                    else 
-                    {
-                        alert("OOPS! Something went wrong or your Username/Password is invalid.");
-                    }
+            <script language="javascript">
+            function check(form)/*function to check userid & password*/
+            {
+             if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                alert("Logged In Successfully!")
+                } else {
+                alert("Error Password or Username")
                 }
+            }
             </script>
         </div>
-    </body>
+</body>
 </html>      
