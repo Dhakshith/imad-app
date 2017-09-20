@@ -23,7 +23,7 @@
             <script language="javascript">
             function check(form)
             {
-             if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+             if(form.userid.value == form.pswrd.value && form.pswrd.value == form.userid.value) {
                 alert("Logged In Successfully!")
                 } else {
                 alert("Invalid Password or Username")
