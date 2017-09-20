@@ -12,7 +12,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 var app = express();
-app.use(bodyParser.json)(morgan('combined'));
+app.use.morgan('combined');
 profile = {
     content: `
     <!DOCTYPE html>
