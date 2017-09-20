@@ -386,7 +386,6 @@ app.get('/hash/:input', function (req, res) {
   var hashedString = hash(req.params.input, 'this-is-some-random-string');
   res.send(hashedString);
 });
-app.use(bodyParser('json'));
 app.post('/Create-User', function (req, res) {
   var UserName = req.body.UserName;
   var password = req.body.password;
