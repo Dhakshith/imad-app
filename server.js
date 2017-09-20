@@ -387,8 +387,8 @@ app.get('/hash/:input', function (req, res) {
   res.send(hashedString);
 });
 app.post('/Create-User', function (req, res) {
-  var UserName = req.body.UserName;
-  var password = req.body.password;
+  var UserName = JSON.parse.req.body.UserName;
+  var password = JSON.parse.req.body.password;
   var salt = crypto.randomBytes(128).toString('hex');
   var DbString = hash(password, salt);
   Pool.query(`insert into "user" ("UserName", "password")values("UserName", "password")`,[UserName, DbString], function(err, result) {
