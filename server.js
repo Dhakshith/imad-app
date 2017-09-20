@@ -430,6 +430,9 @@ app.get('/article-7', function (req, res) {
 app.get('/article-8', function (req, res) {
   res.send(createTemplate(articleEight));
 });
+app.get('/login.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.php'));
+});
 app.get('/article-9', function (req, res) {
     Pool.query(`SELECT name FROM "Articles" where title = 'Article-5'`, function (err, result){
       if (err) {
