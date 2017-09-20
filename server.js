@@ -388,7 +388,7 @@ app.get('/hash/:input', function (req, res) {
 app.post('/Create-User', function (req, res) {
   
   
-  var username = req.body.UserName;
+  var UserName = req.body.UserName;
   var password = req.body.password;
   
   var salt = crypto.getRandomBytes(128).toString('hex');
