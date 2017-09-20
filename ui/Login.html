@@ -25,17 +25,31 @@
                 <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="myFunction()" value="Logout"/><hr>
             </form>
             <script language="javascript">
-function check(form)/*function to check userid & password*/
-{
- if(form.userid.value == form.pswrd.value)
-  {
-    alert('Successfully Logged In !')
-  }
- else
- {
-   alert("Invalid Password Or Username")
-  }
-}
+                function myFunction() {
+                        if(form.userid.value == form.pswrd.value)
+                        {
+                             alert('Successfully Logged Out !')
+                        } else { 
+                            if(form.userid.value != form.pswrd.value) {
+                                alert("You must login to do that")
+                            }
+                        }
+                    }
+                    function check(form) {
+                        if(form.userid.value == form.pswrd.value)
+                        {
+                        alert('Successfully Logged In !')
+                        } else { 
+                            if(form.userid.value != form.pswrd.value) {
+                                alert("You must login to do that")
+                            }
+                        }
+                        else {
+                                if(myInput.value.length <= 0) {
+                                alert('Your Password Must Contain At Least 1 character')
+                            }
+                        }
+                    }
 </script>
         </div>
     </body>
