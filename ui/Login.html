@@ -37,21 +37,6 @@ function check(form)/*function to check userid & password*/
   }
 }
 </script>
-<script type="text/javascript">
-function disable_enable(el){
-    el.disabled = true;
-    if(el.value == 'login')
-        document.test.logout.disabled = false;
-else
-        document.test.login.disabled = false;
-
-}
-</script>
-<form name="test" >
-<input type="button" id="login" value="login" name="b1" onclick='disable_enable(this)'>
-<input type="button" id="logout" value="logout" name="b2" disabled  onclick='disable_enable(this)'>
-</form>
-
         </div>
     </body>
 </html>      
