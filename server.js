@@ -51,8 +51,8 @@ profile = {
             </h2>
             <div class = "Footer">
                 <h1>
-                    Number Of Times This Button <button id="counter" style="background-color: brown;padding: 15px 32px;"><p style="color: white;font-size: 17.5px">Click Me !</button> Has Been Clicked + Number Of Visits To This Page <form action="http://sdhakshithraam.imad.hasura-app.io/counter">
-    <input style="background-color: brown; /* Green */
+                    Number Of Times This Button <button id="counter" style="background-color: brown;padding: 15px 32px;"><p style="color: white;font-size: 17.5px">Click Me !</button> Has Been Clicked</h1><p> + </p><h1>Number Of Visits To This Page <form action="http://sdhakshithraam.imad.hasura-app.io/counter">
+    <input style="background-color: brown;
     border: inset;
     color: white;
     padding: 10px 70px;
