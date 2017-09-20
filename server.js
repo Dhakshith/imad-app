@@ -387,19 +387,6 @@ app.get('/hash/:input', function (req, res) {
   res.send(hashedString);
 });
 
-app.post('/Create-User', function (req, res) {
-  var UserName = req.body.UserName;
-  var password = req.body.password;
-  var salt = crypto.randomBytes(128).toString('hex');
-  var DbString = hash(password, salt);
-  Pool.query(`insert into "user" ("UserName", "password")values("UserName", "password")`,[UserName, DbString], function(err, result) {
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-          res.send('User Successfully Created: ' + UserName);
-      }
-  });
-});
 app.get('/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
