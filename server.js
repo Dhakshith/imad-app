@@ -115,7 +115,7 @@ articleEight = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 19 2017";
+                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -150,7 +150,7 @@ articleSeven = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 19 2017";
+                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -185,7 +185,7 @@ articleSix = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 19 2017";
+                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -220,7 +220,7 @@ articleFive = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -255,7 +255,7 @@ articleFour = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                 </script>
                                 <hr/>
                                 </p>
@@ -290,7 +290,7 @@ articleThree = {
                             <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                                 <script>
                                                     var dt = new Date();
-                                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                                 </script>
                             <p id="demo"></p>
                             <div>
@@ -323,7 +323,7 @@ articleTwo = {
             <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                 </script>
             <p id="demo"></p>
             <div>
@@ -356,7 +356,7 @@ articleOne = {
                                 <p style="font-size:30px;color:red;font-family:arial"><span id="datetime"></span></p>
                                 <script>
                                     var dt = new Date();
-                                    document.getElementById("datetime").innerHTML = "September 18 2017";
+                                    document.getElementById("datetime").innerHTML = "September 21 2017";
                                 </script>
                                 <hr/>
                                 </p>
