@@ -18,6 +18,10 @@
                 Login   Logout
             </h1>
             <hr>
+            <div>
+                <p style="font-size:37px;"><a href="/">Home</a>
+            </div>
+            <hr>
             <form name="login">
                 <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="text" id="userid" placeholder="Username"/><br><br>
                 <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="password" id="pswrd" placeholder="Password"/><hr>
@@ -31,7 +35,7 @@
                         alert('Successfully Logged In As ' + form.userid.value)
                         } else { 
                             if(form.userid.value != form.pswrd.value) {
-                                alert('OOPS! Invalid Username Or Password')
+                                alert('OOPS! Username Or Password Seems To Be Invalid!')
                             }
                         }
                     }
