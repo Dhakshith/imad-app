@@ -7,14 +7,25 @@
         <title>Login</title>
     </head>
     <body>
-        <div class="container">
-            <div class="header" style="font-size:80px;color:#3333ff;background-color: brown;border: inset;color: white;">Login</div>
-            <form>
+        <div class="container" bgcolor="#4dffff">
+            <div class="header" style="font-size:80px;color:#3333ff;background-color: brown;border: inset;color: white;">
+                Login
+            </div>
+            <form name="login">
                 <input style="color:#80334C;font-size:30px" type="text" id="username" placeholder="Username"><br><br><br>
                 <input style="color:#8CFFAB;font-size:30px" type="password" id="password" placeholder="Password"><br><br><br>
-                <input style="color:#FFB842;font-size:30px" type="submit" id="submit_btn" Value="Submit">
+                <input style="color:#FFB842;font-size:30px" type="submit" onclick="Login()" id="submit_btn" Value="Submit">
                 <br><br><br>
             </form>
+            <script>
+                function Login() {
+                    if (form.username.value == "Dhakshith" && form.password.value == "Dhakshith") {
+                        alert("Successfully Logged in!");
+                    } else {
+                        alert("OOPS! Something went wrong or your Username/Password is invalid.");
+                    }
+                }
+            </script>
         </div>
     </body>
 </html>      
