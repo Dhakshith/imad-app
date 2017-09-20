@@ -89,15 +89,6 @@ button.onclick = function () {
                 </ul>
             </div>
             <hr>
-            <h5 style="font-size:70px;color:green">
-                Login To Unlock Various Features:
-            </h6>
-            <form>
-                <input style="color:#80334C;font-size:30px" type="text" id="username" placeholder="Username"></input><br><br><br>
-                <input style="color:#8CFFAB;font-size:30px" type="password" id="password" placeholder="Password"></input><br><br><br>
-                <input style="color:#FFB842;font-size:30px" type="submit" id="submit_btn" Value="Submit"></input>
-                <br><br><br>
-            </form>
         </div>
     </body>
 </html>
