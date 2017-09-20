@@ -19,12 +19,14 @@
             </h1>
             <hr>
             <form name="login">
-                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="text" name="userid" placeholder="Username"/><br><br>
-                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="password" name="pswrd" placeholder="Password"/><hr>
+                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="text" id="userid" placeholder="Username"/><br><br>
+                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="password" id="pswrd" placeholder="Password"/><hr>
                 <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="check(form)" value="Login"/><br><br>
                 <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="myFunction()" value="Logout"/><hr>
             </form>
             <script language="javascript">
+                var myInput = document.getElementById("pswrd");
+                var myOutput = document.getElementById("userid");
                 function myFunction() {
                         if(form.userid.value == form.pswrd.value)
                         {
@@ -45,10 +47,10 @@
                             }
                         }
                         else {
-                                if(userid.value.length <= 0) {
+                                if(myOutput.value.length <= 0) {
                                 alert('Your username Must Contain At Least 1 character !')
                             } else {
-                                if(pswrd.value.length <= 0) {
+                                if(myInput.value.length <= 0) {
                                     alert('Your Password Must Contain At Least 1 character !')
                                 }
                             }
