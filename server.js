@@ -12,6 +12,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 var app = express();
+app.use(bodyParser.json());
 app.use(morgan('combined'));
 profile = {
     content: `
@@ -386,9 +387,10 @@ app.get('/hash/:input', function (req, res) {
   var hashedString = hash(req.params.input, 'this-is-some-random-string');
   res.send(hashedString);
 });
+
 app.post('/Create-User', function (req, res) {
-  var UserName = JSON.parse.req.body.UserName;
-  var password = JSON.parse.req.body.password;
+  var UserName = req.body.UserName;
+  var password = req.body.password;
   var salt = crypto.randomBytes(128).toString('hex');
   var DbString = hash(password, salt);
   Pool.query(`insert into "user" ("UserName", "password")values("UserName", "password")`,[UserName, DbString], function(err, result) {
