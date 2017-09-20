@@ -88,6 +88,9 @@ button.onclick = function () {
                 <ul class="a" id="namelist">
                 </ul>
             </div>
+            <form method="post" action="index.html">
+                <input type="text" id="username" placeholder="Username">
+            </form>
         </div>
     </body>
 </html>
