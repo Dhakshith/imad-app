@@ -93,7 +93,7 @@ button.onclick = function () {
                 Login To Unlock Various Features:
             </h6>
             <form method="post" action="index.html">
-                <input style="color:#80334C;font-size:30px" type="text" id="username" placeholder="Username"></input><br><br>
+                <input style="color:#80334C;font-size:30px" type="text" id="username" placeholder="Username"></input><br><br><br>
                 <input style="color:#8CFFAB;font-size:30px" type="password" id="password" placeholder="Password"></input>
                 <br><br><br>
             </form>
