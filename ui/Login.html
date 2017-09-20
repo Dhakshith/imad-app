@@ -29,8 +29,8 @@
                 if(form.userid.value == form.pswrd.value) {
                     alert("Logged Out Successfully!")
                     } else {
-                    alert("You must Login To Do That")
-                    }
+                    alert("You must Login To Do That!")
+                    } 
                 }
             </script>
             <script language="javascript">
@@ -40,7 +40,11 @@
                 alert("Logged In Successfully!")
                 } else {
                 alert("Invalid Password Or Username")
-                }
+                } else {
+                        if(form.userid.value.length >= 8) {
+                            alert("Your Password must contain atleast 8 ")
+                        }
+                    }
             }
             </script>
         </div>
