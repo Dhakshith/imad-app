@@ -13,7 +13,6 @@ var config = {
 };
 var app = express();
 app.use(morgan('combined'));
-app.use(bodyParser.json);
 profile = {
     content: `
     <!DOCTYPE html>
@@ -390,8 +389,8 @@ app.get('/hash/:input', function (req, res) {
 app.post('/Create-User', function (req, res) {
   
   
-  var UserName = req.bodyParser.UserName;
-  var password = req.bodyParser.password;
+  var UserName = req.body.UserName;
+  var password = req.body.password;
   
   var salt = crypto.randomBytes(128).toString('hex');
   var DbString = hash(password, salt);
