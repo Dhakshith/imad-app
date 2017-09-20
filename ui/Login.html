@@ -22,7 +22,11 @@
             </form>
             <script language="javascript">
                 function myFunction() {
-                alert("You are Logged Out")
+                if(form.userid.value == form.pswrd.value) {
+                    alert("Logged Out Successfully!")
+                    } else {
+                    alert("Login To Logout")
+                    }
                 }
             </script>
             <script language="javascript">
@@ -31,7 +35,7 @@
              if(form.userid.value == form.pswrd.value) {
                 alert("Logged In Successfully!")
                 } else {
-                alert("Invalid Password or Username")
+                alert("Invalid Password Or Username")
                 }
             }
             </script>
