@@ -85,8 +85,7 @@ button.onclick = function () {
 };
             </script>
             <div style="color: #FF0A0E;font-size: 30px">
-                <ul class="a" id="namelist">
-                </ul>
+                <ul style="list-style-image: url('sqpurple.gif');" class="a" id="namelist"></ul>
             </div>
             <hr>
         </div>
