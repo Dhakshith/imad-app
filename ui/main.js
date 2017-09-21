@@ -7,7 +7,8 @@ var submit = document.getElementById('submit_btn');
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             
-            if (request.status === 200) {            var names = request.responseText;
+            if (request.status === 200) {            
+                var names = request.responseText;
                 names = JSON.parse(names);
                 var list = '';
                 for (i=0; i< names.length; i++) {
