@@ -26,23 +26,18 @@
                 <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="text" name="userid" placeholder="Username"/><br><br>
                 <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="password" name="pswrd" placeholder="Password"/><hr>
                 <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="check(form)" value="Login"/><br><br>
-                <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="myfunction()" value="Logout"/><hr>
+                <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="alert('Logged Out')" value="Logout"/><hr>
             </form>
             <hr>
             <script language="javascript">
                 function check(form) {
                     if(form.userid.value == form.pswrd.value) {
-                        alert('Logged In')
+                        alert('Logged In As ' + form.userid.value + ' .')
                     } else { 
                         if(form.userid.value != form.pswrd.value) {
                             alert('OOPS! Username Or Password Seems To Be Invalid!')
                         }
                     }
-                }
-            </script>
-            <script>
-                function myFunction() {
-                    alert('Logged Outt')
                 }
             </script>
             <div style="color:#0080FF;font-size:50px" id="asdf">
