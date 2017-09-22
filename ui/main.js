@@ -26,3 +26,11 @@ var submit = document.getElementById('submit_btn');
     request.open('GET', 'http://sdhakshithraam.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 };
+
+var $sun = $('.sun');
+var $win = $(window);
+
+$win.on('scroll', function () {
+    var top = $win.scrollTop() / 3;
+    $sun.css('transform', 'rotate(' + top + 'deg)');
+});
