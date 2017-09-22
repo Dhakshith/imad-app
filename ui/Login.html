@@ -34,7 +34,7 @@
                     if(form.userid.value == form.pswrd.value) {
                         alert('Successfully Logged In As ' + form.userid.value + ' .');
                         var 2division = document.getElementById('asdf');
-                        2division.value = "'Successfully Logged In As ' + form.userid.value + ' .'";
+                        2division.value = 'Successfully Logged In As ' + form.userid.value + ' .';
                     } else { 
                         if(form.userid.value != form.pswrd.value) {
                             alert('OOPS! Username Or Password Seems To Be Invalid!')
@@ -44,7 +44,6 @@
             </script>
             <script>
                 function myFunction() {
-                    alert('Successfully Logged Out');
                     var division = document.getElementById('asdf');
                     division.value = "You are not logged in, So Please Login";
                 }
