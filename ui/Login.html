@@ -32,14 +32,14 @@
             <script language="javascript">
                 function check(form) {
                     if(form.userid.value == form.pswrd.value) {
-                    alert('Successfully Logged In As ' + form.userid.value + ' .')
+                        alert('Successfully Logged In As ' + form.userid.value + ' .');
+                        var 2division = document.getElementById('asdf');
+                        2division.value = "'Successfully Logged In As ' + form.userid.value + ' .'";
                     } else { 
                         if(form.userid.value != form.pswrd.value) {
                             alert('OOPS! Username Or Password Seems To Be Invalid!')
                         }
                     }
-                    var 2division = document.getElementById('asdf');
-                    2division.value = "'Successfully Logged In As ' + form.userid.value + ' .'";
                 }
             </script>
             <script>
