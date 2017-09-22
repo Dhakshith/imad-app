@@ -30,10 +30,9 @@
             </form>
             <hr>
             <script language="javascript">
-                var im2age = document.getElementById('asdf');
                 function check(form) {
                     if(form.userid.value == form.pswrd.value) {
-                        im2age.src = "http://3.bp.blogspot.com/-XxKkCIkGTrI/UfYqJbH7twI/AAAAAAAAAmw/u6UAd7_71vk/s1600/TempFolderError.jpg";
+                        alert('Logged In')
                     } else { 
                         if(form.userid.value != form.pswrd.value) {
                             alert('OOPS! Username Or Password Seems To Be Invalid!')
@@ -44,7 +43,7 @@
             <script>
                 var image = document.getElementById('asdf');
                 function myFunction() {
-                    image.src = "https://i.stack.imgur.com/djlWI.png";
+                    alert('Logged Outt')
                 }
             </script>
             <div style="color:#0080FF;font-size:50px" id="asdf">
