@@ -35,7 +35,7 @@
                     {
                     alert('Successfully Logged In As ' + form.userid.value + '.')
                     var Login_Area = '';
-                    list += `<p style="color:#0080FF;font-size:60px"><i>Logged In As ` + form.userid.value + '</i></p>';
+                    Login_Area += `<p style="color:#0080FF;font-size:60px"><i>Logged In As ` + form.userid.value + '</i></p>';
                     } else { 
                         if(form.userid.value != form.pswrd.value) {
                             alert('OOPS! Username Or Password Seems To Be Invalid!')
@@ -51,6 +51,13 @@
                     document.getElementById('asdf').innerHTML = 'You Are Not Logged In, So Please Login';
                 }
             </script>
+            <div style="color:#0080FF;font-size:50px" id="asdf">
+                <p>
+                    <i>
+                        You Are Not Logged In, So Please Login
+                    </i>
+                </p>
+            </div>
         </div>
     </body>
 </html>      
