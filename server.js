@@ -36,23 +36,8 @@ progress = {
                 </div>
             </div>
     		<br><hr>
+    	    <script type="text/javascript" src="/main.js"></script>
     	</div>
-    	<script>
-function move() {
-  var e = document.getElementById("myBar");   
-  var width = 5;
-  var id = setInterval(frame, 60);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      e.style.width = width + '%'; 
-      e.innerHTML = width * 1  + '%';
-    }
-  }
-}
-</script>
 	</body>
 </html>
     `  
