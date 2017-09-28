@@ -30,11 +30,15 @@ progress = {
     		<h1 style="font-size:50px;color:#FFA300">Normal Spinner</h1><br>
     		<div class="loader"></div>
     		<h1 style="font-size:50px;color:#FFA300">Rectangular Progress Bar</h1>
-    		<div id="myProgress"><div id="myBar" onclick="move()">5%</div></div>
+    		<div id="myProgress">
+                <div id="myBar" onclick="move()">
+                    5%
+                </div>
+            </div>
     		<br><hr>
     	</div>
     	<script>
-    	    function move() {
+function move() {
   var e = document.getElementById("myBar");   
   var width = 5;
   var id = setInterval(frame, 60);
@@ -48,7 +52,7 @@ progress = {
     }
   }
 }
-    	<script>
+</script>
 	</body>
 </html>
     `  
