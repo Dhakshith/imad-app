@@ -19,7 +19,7 @@ progress = {
 <html lang="en">
 	<head>	
 		<meta charset="UTF-8">
-		<title>ProgressBar+Spinner</title>
+		<title>ProgressBars+Spinners</title>
 		<link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
 		<link href="/style.css" rel="stylesheet" />
 	</head>
@@ -29,7 +29,7 @@ progress = {
     		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
     		<h1 style="font-size:50px;color:#FFA300">Normal Spinner</h1><br>
     		<div class="loader"></div>
-    		<h1 style="font-size:50px;color:#FFA300">Progress Bar</h1>
+    		<h1 style="font-size:50px;color:#FFA300">Rectangular Progress Bar</h1>
     		<div id="percentCount" class="percent-count">100% test</div>
     		<div class="progress-bar" >
     			<div class="progress" id="progress"></div>
