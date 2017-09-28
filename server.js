@@ -71,7 +71,7 @@ progress = {
 		<h1 style="font-size:50px;color:#FFA300">Progress Bar</h1>
 		<div id="percentCount" class="percent-count">100% test</div>
 		<div class="progress-bar" >
-			<div class="progress" id="progress"><>
+			<div class="progress" id="progress"></div>
 		</div>
 	</body>
 </html>
