@@ -31,9 +31,7 @@ progress = {
     		<div class="loader"></div>
     		<h1 style="font-size:50px;color:#FFA300">Rectangular Progress Bar</h1>
     		<div id="myProgress">
-                <div id="myBar" onclick="move()">
-                    0%
-                </div>
+                <div id="myBar" onclick="move()"></div>
             </div>
     		<br><hr>
     	    <script type="text/javascript" src="/main.js"></script>
