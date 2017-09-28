@@ -24,15 +24,17 @@ progress = {
 		<link href="/style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<h1 style="font-size:50px;color:#FFA300">Fidget Spinner</h1><br>
-		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
-		<h1 style="font-size:50px;color:#FFA300">Normal Spinner</h1><br>
-		<div class="loader"></div>
-		<h1 style="font-size:50px;color:#FFA300">Progress Bar</h1>
-		<div id="percentCount" class="percent-count">100% test</div>
-		<div class="progress-bar" >
-			<div class="progress" id="progress"></div>
-		</div>
+	    <div class="container">
+    		<h1 style="font-size:50px;color:#FFA300">Fidget Spinner</h1><br>
+    		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
+    		<h1 style="font-size:50px;color:#FFA300">Normal Spinner</h1><br>
+    		<div class="loader"></div>
+    		<h1 style="font-size:50px;color:#FFA300">Progress Bar</h1>
+    		<div id="percentCount" class="percent-count">100% test</div>
+    		<div class="progress-bar" >
+    			<div class="progress" id="progress"></div>
+    		</div>
+    	</div>
 	</body>
 </html>
     `  
