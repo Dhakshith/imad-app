@@ -85,7 +85,7 @@ profile = {
             </div>
             <hr/>
             <input style="color:#800080;font-size:30px" type="text" id="name" placeholder="Type Your Name"></input>
-            <input type="submit" id="submit_btn" value="Submit"></input>
+            <input type="submit" id="submit_btn" class="button" value="Submit"></input>
             <script type="text/javascript" src="/main.js">
             </script>
             <script>
