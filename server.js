@@ -32,7 +32,7 @@ progress = {
     		<h1 style="font-size:50px;color:#FFA300">Rectangular Progress Bar</h1>
     		<div id="myProgress">
                 <div id="myBar" onclick="move()">
-                    5%
+                    0%
                 </div>
             </div>
     		<br><hr>
