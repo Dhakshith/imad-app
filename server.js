@@ -38,7 +38,7 @@ progress = {
     	    <script type="text/javascript" src="/main.js"></script>
     	    <h1 style="font-size:50px;color:#FFA300">Circular Progress Bar</h1>
     	    <script src="//code.jquery.com/jquery.min.js"></script>
-    	    <script src="plugin.js"></script>
+    	    <script src="F:\dhakshithraam.imad.hasura-app.io\plugin.js"></script>
     	    <div class="my-progress-bar"></div>
             <script type="text/javascript">
                 var progress_circle = $(".my-progress-bar").gmpc({
