@@ -61,7 +61,6 @@ body {
 	color: #FF5226; 
 }
 .loader {
-	margin-left: 527px;
 	animation: spin 2s linear infinite;
 	border: 16px solid #FF9900;
     border-radius: 50%;
