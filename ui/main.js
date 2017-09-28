@@ -29,7 +29,7 @@ var submit = document.getElementById('submit_btn');
 
 function move() {
   var e = document.getElementById("myBar");   
-  var width = 5;
+  var width = 0;
   var id = setInterval(frame, 60);
   function frame() {
     if (width >= 100) {
