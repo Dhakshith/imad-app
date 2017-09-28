@@ -37,7 +37,7 @@ progress = {
     		<br><br><hr>
     	    <script type="text/javascript" src="/main.js"></script>
     	    <h1 style="font-size:50px;color:#FFA300">Circular Progress Bar</h1>
-    	    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    	    <script src="//code.jquery.com/jquery.min.js"></script>
     	    <script src="plugin.js"></script>
     	    <div class="my-progress-bar"></div>
             <script type="text/javascript">
