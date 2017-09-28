@@ -33,7 +33,7 @@ progress = {
     		<div id="myProgress">
                 <div id="myBar"></div>
             </div><br><br>
-            <button class="button" onclick="move()" placeholder="Start Process"></button>
+            <button class="button" onclick="move()">Start Process</button>
     		<br><hr>
     	    <script type="text/javascript" src="/main.js"></script>
     	    <h1 style="font-size:50px;color:#FFA300">Circular Progress Bar</h1>
