@@ -39,6 +39,12 @@ progress = {
     	    <h1 style="font-size:50px;color:#FFA300">Circular Progress Bar</h1>
     	    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
     	    <script src="plugin.js"></script>
+    	    <div class="my-progress-bar"></div>
+            <script type="text/javascript">
+                var progress_circle = $(".my-progress-bar").gmpc({
+                    
+                })
+            </script>
     	</div>
 	</body>
 </html>
