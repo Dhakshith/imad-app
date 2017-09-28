@@ -19,7 +19,7 @@ progress = {
 <html lang="en">
 	<head>	
 		<meta charset="UTF-8">
-		<title>ProgressBars+Spinners</title>
+		<title>ProgressBar+Spinners</title>
 		<link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
 		<link href="/style.css" rel="stylesheet" />
 	</head>
