@@ -52,3 +52,28 @@ body {
     width: 200px;
     margin: 0 auto;
 }
+.percent-count {
+	width: 450px;
+	height: 50px;
+	font-size: 50px;
+	margin: 100px auto;
+	text-align: center;
+	color: #FF5226; 
+}
+.loader {
+	margin-left: 527px;
+	animation: spin 2s linear infinite;
+	border: 16px solid #FF9900;
+    border-radius: 50%;
+  	border-top: 16px solid #663399;
+ 	border-right: 16px solid #ABFF8F;
+  	border-bottom: 16px solid #0DFFFF;
+}
+.fidget {
+	height: 150px;
+	animation: spin 1.5s linear infinite
+}
+@keyframes spin {
+	100% { transform: rotate(360deg);}
+	0% { transform: rotate(0deg);}
+}
