@@ -40,7 +40,7 @@ body {
     transition-duration: 0.4s;
 }
 .button:hover {
-    background-color: #4CAF50;
+    background-color: white;
     color: #738C8C;
 }
 .a {
