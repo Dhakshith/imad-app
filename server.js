@@ -13,12 +13,77 @@ var config = {
 };
 var app = express();
 app.use(morgan('combined'));
+progress = {
+    content: `
+    <!DOCTYPE html>
+
+<html lang="en">
+
+	<head>	
+		<meta charset="UTF-8">
+		<title>Progress Bar + Spinner</title>
+		<link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
+	</head>
+	<style>
+		* {	
+			box-sizing: border-box;
+		}
+		.percent-count {
+			width: 450px;
+			height: 50px;
+			font-size: 50px;
+			margin: 100px auto;
+			text-align: center;
+			color: #FF5226; 
+		}
+		body {
+			text-align: center;
+			margin-right: 100px;
+			margin-left: 100px;
+			background-color: #008CFF;
+			border: 20px solid orange;
+		}
+		.loader {
+			margin-left: 527px;
+			animation: spin 2s linear infinite;
+			border: 16px solid #FF9900;
+  			border-radius: 50%;
+  			border-top: 16px solid #663399;
+ 			border-right: 16px solid #ABFF8F;
+  			border-bottom: 16px solid #0DFFFF;
+  			width: 120px;
+  			height: 120px;
+		}
+		.fidget {
+			height: 150px;
+			animation: spin 1.5s linear infinite
+		}
+		@keyframes spin {
+			100% { transform: rotate(360deg);}
+			0% { transform: rotate(0deg);}
+		}
+	</style>
+	<body>
+		<h1 style="font-size:50px;color:#FFA300">Fidget Spinner</h1><br>
+		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
+		<h1 style="font-size:50px;color:#FFA300">Normal Spinner</h1><br>
+		<div class="loader"></div>
+		<h1 style="font-size:50px;color:#FFA300">Progress Bar</h1>
+		<div id="percentCount" class="percent-count">100% test</div>
+		<div class="progress-bar" >
+			<div class="progress" id="progress"><>
+		</div>
+	</body>
+</html>
+    `  
+};
 profile = {
     content: `
     <!DOCTYPE html>
     <html>
     <head>
     <link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
+    <title>My Profile</title>
     </head>
     <body>
         <div class="container">
@@ -443,6 +508,9 @@ app.get('/article-9', function (req, res) {
 });
 app.get('/MyProfile', function (req, res) {
     res.send(createTemplate(profile));
+});
+app.get('/Progress', function (req, res) {
+    res.send(createTemplate(progress));
 });
 var counter = 0;
 app.get('/Counter', function (req, res) {
