@@ -78,7 +78,7 @@ profile = {
             </h2>
             <div class = "Footer">
                 <h1>
-                    Number Of Times This Button <button class="button" id="counter">Click Me !</button> Has Been Clicked</h1><p> + </p><h1>Number Of Visits To This Page <div class="button"><form action="http://sdhakshithraam.imad.hasura-app.io/counter">
+                    Number Of Times This Button <button class="button" id="counter">Click Me !</button> Has Been Clicked</h1><p style="font-size:20px;"> + </p><h1>Number Of Visits To This Page <div class="button"><form action="http://sdhakshithraam.imad.hasura-app.io/counter">
         <input type="submit" value="Counter" />
     </form></div><br><span id="count" style="font-family:arial;font-size:50px;color:black">0</span>
                 </h1>    
