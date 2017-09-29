@@ -63,7 +63,7 @@ loginoutcom = {
                 <p style="font-size:37px;"><a href="/">Home</a>
             </div>
             <hr>
-            <form name="login">
+            <form name="login" class="cmnt_frm">
                 <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="text" name="userid" placeholder="Username"/><br><br>
                 <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="password" name="pswrd" placeholder="Password"/><hr>
                 <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="check(form)" value="Login"/><br><br>
@@ -83,7 +83,7 @@ loginoutcom = {
             <h1 style="border: 2px solid #a1a1a1;padding: 50px 100px;background: #29FFC2;width: 500px;border-radius: 50px;text-shadow: -10px 10px 0px #00e6e6,-20px 20px 0px #01cccc,-30px 30px 0px #00bdbd;font-size: 150px;color:white">
                 Comment
             </h1>
-            <form class="cmnt_frm" name="">
+            <form class="cmnt_frm" name="comments">
                 <label>Name: <br>
                 <input type="text"><br>
                 </label>
