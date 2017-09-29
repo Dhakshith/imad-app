@@ -97,6 +97,9 @@ loginoutcom = {
                 </label><br>
                 <button class="button" type="submit">Submit</button><br><hr>
             </form>
+            <div class="">
+            
+            </div>
             <br><br>
         </div>
     </body>
@@ -398,7 +401,7 @@ articleTwo = {
         <body>
             <div class="container">
             <p style="font-size:75px;"><strong>Article-2 | Dhakshith</strong>
-            <meta name="viewport" content="width=device-width, initial+scale=1" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <div>
                 <p style="font-size:37px;"><a href="/">Home</a>
             </div>
