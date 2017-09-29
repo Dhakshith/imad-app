@@ -97,14 +97,8 @@ loginoutcom = {
                 <label>Your Comment: <br>
                 <textarea name="textcom" rows="5" cols="45" placeholder="Your Comment..."></textarea>
                 </label><br>
-                <button onclick="comment()" class="button" type="submit">Submit</button><br><hr>
+                <button class="button" type="submit">Submit</button><br><hr>
             </form>
-            <br><br>
-            <div id="cmnt_output" class="cmnt_output">
-                <h1>
-                    Comments:<hr>
-                </h1>
-            </div>
             <br><br>
         </div>
     </body>
