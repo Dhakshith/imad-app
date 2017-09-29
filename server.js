@@ -99,7 +99,11 @@ loginoutcom = {
                 <button class="button" type="submit">Submit</button><br><hr>
             </form>
             <br><br>
-            <div class="cmnt_output"></div>
+            <div class="cmnt_output">
+                <h1>
+                    Comments:
+                </h1>
+            </div>
             <br><br>
         </div>
     </body>
