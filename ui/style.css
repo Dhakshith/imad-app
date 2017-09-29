@@ -42,7 +42,6 @@ body {
 .button:hover {
     background-color: white;
     color: #738C8C;
-    animation: spin 5s linear infinite;
 }
 .a {
     list-style-image: url('sqpurple.gif');
