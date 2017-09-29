@@ -55,13 +55,13 @@ loginoutcom = {
     </head>
     <body>
         <div class="container">
-            <h1 style="border: 2px solid #a1a1a1;padding: 50px 100px; background: #29FFC2;width: 500px;border-radius: 50px;text-shadow: -10px 10px 0px #00e6e6,-20px 20px 0px #01cccc,-30px 30px 0px #00bdbd;font-size: 150px;color:white">
-                Login   Logout
-            </h1>
-            <hr>
             <div>
                 <p style="font-size:37px;"><a href="/">Home</a>
             </div>
+            <hr>
+            <h1 style="border: 2px solid #a1a1a1;padding: 50px 100px; background: #29FFC2;width: 500px;border-radius: 50px;text-shadow: -10px 10px 0px #00e6e6,-20px 20px 0px #01cccc,-30px 30px 0px #00bdbd;font-size: 150px;color:white">
+                Login   Logout
+            </h1>
             <hr>
             <form name="login" class="cmnt_frm">
                 <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="text" name="userid" placeholder="Username"/><br><br>
