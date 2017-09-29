@@ -83,7 +83,7 @@ loginoutcom = {
             <h1 style="border: 2px solid #a1a1a1;padding: 50px 100px;background: #29FFC2;width: 500px;border-radius: 50px;text-shadow: -10px 10px 0px #00e6e6,-20px 20px 0px #01cccc,-30px 30px 0px #00bdbd;font-size: 150px;color:white">
                 Comment
             </h1>
-            <form method="post">
+            <form class="cmnt_frm" method="post">
                 <label>Name: <br>
                 <input type="text"><br>
                 </label>
