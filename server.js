@@ -46,11 +46,12 @@ loginoutcom = {
 <html>
     <head>
         <title>
-            Login | Logout | Comment
+            Login|Logout|Comment
         </title>
         <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" height="8px" />
         <link href="/style.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script type="text/javascript" src="/main.js"></script>
     </head>
     <body>
         <div class="container">
@@ -97,9 +98,8 @@ loginoutcom = {
                 </label><br>
                 <button class="button" type="submit">Submit</button><br><hr>
             </form>
-            <div class="">
-            
-            </div>
+            <br><br>
+            <div class="cmnt_output"></div>
             <br><br>
         </div>
     </body>
@@ -112,6 +112,7 @@ profile = {
     <head>
     <link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
     <title>My Profile</title>
+    <script type="text/javascript" src="/main.js"></script>
     </head>
     <body>
         <div class="container">
@@ -188,6 +189,7 @@ articleEight = {
                             <title>
                                 Article-8 | Dhakshith
                             </title>
+                            <script type="text/javascript" src="/main.js"></script>
                             <link href="/style.css" rel="stylesheet" />
                             <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                         </head>
@@ -225,6 +227,7 @@ articleSeven = {
                             </title>
                             <link href="style.css" rel="stylesheet" />
                             <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
+                            <script type="text/javascript" src="/main.js"></script>
                         </head>
                         <body>
                             <div class="container">                    
@@ -254,6 +257,7 @@ articleSix = {
         <!DOCTYPE html>
                   <html>
                         <head>    
+                            <script type="text/javascript" src="/main.js"></script>
                             <link href="/style.css" rel= "stylesheet" />
                             <title>
                                 Article-6 | Dhakshith
@@ -289,6 +293,7 @@ articleFive = {
         <!DOCTYPE html>
                   <html>
                         <head>    
+                            <script type="text/javascript" src="/main.js"></script>
                             <link href="/style.css" rel= "stylesheet" />
                             <title>
                                 Article-5 | Dhakshith
@@ -324,6 +329,7 @@ articleFour = {
         <!DOCTYPE html>
                   <html>
                         <head>    
+                            <script type="text/javascript" src="/main.js"></script>
                             <link href="/style.css" rel= "stylesheet" />
                             <title>
                                 Article-4 | Dhakshith
@@ -359,6 +365,7 @@ articleThree = {
         <!DOCTYPE html>
                     <html>
                         <head>
+                            <script type="text/javascript" src="/main.js"></script>
                             <title>
                                 Article-3 | Dhakshith
                             </title>
@@ -392,6 +399,7 @@ articleTwo = {
     <!DOCTYPE html>
     <html>
         <head>
+            <script type="text/javascript" src="/main.js"></script>
             <title>
                 Article-2 | Dhakshith
             </title>
@@ -424,7 +432,8 @@ articleOne = {
         content: `
         <!DOCTYPE html>
                   <html>
-                        <head>    
+                        <head>   
+                            <script type="text/javascript" src="/main.js"></script>
                             <link href="/style.css" rel= "stylesheet" />
                             <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
                             <title>
