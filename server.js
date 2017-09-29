@@ -98,7 +98,7 @@ loginoutcom = {
                 </label><br>
                 <button class="button" type="submit">Submit</button>
             </form>
-            <br><br><br><hr>
+            <br><br>
         </div>
     </body>
 </html>`
