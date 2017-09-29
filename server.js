@@ -91,7 +91,7 @@ loginoutcom = {
                 <input type="number" value="xxxx-xxxxxx"><br>
                 </label>
                 <label>Email Address: <br>
-                <input type="text" value="example: user@gmail.com"><br>
+                <input type="text" value="example: username@gmail.com"><br>
                 </label>
             </form>
             <br><br>
