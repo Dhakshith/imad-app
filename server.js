@@ -83,11 +83,16 @@ loginoutcom = {
             <h1 style="border: 2px solid #a1a1a1;padding: 50px 100px;background: #29FFC2;width: 500px;border-radius: 50px;text-shadow: -10px 10px 0px #00e6e6,-20px 20px 0px #01cccc,-30px 30px 0px #00bdbd;font-size: 150px;color:white">
                 Comment
             </h1>
-            <form name="Comment">
-                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" placeholder="Name"/><br><br>
-                <textarea placeholder="COMMENT" rows="6" cols="47" style="font-family:ar destine;color:#57D9FF;font-size:20px;border:inset;display:inline-block"></textarea>
-                <br><br>
-                <input type="button" style="background-color: brown;border:inset;color:white;padding: 30px 70px;text-align: center;display:inline-block;font-size: 20px;" value="Submit">
+            <form method="post">
+                <label>Name: <br>
+                <input type="text"><br>
+                </label>
+                <label>Phone No.: <br>
+                <input type="number" value="xxxx-xxxxxx"><br>
+                </label>
+                <label>Email Address: <br>
+                <input type="text" value="xxxx-xxxxxx"><br>
+                </label>
             </form>
             <br><br>
         </div>
