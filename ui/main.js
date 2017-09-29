@@ -41,3 +41,14 @@ function move() {
     }
   }
 }
+
+function comment() {
+    var cmntt = document.getElementById('textcom');
+                cmntt = JSON.parse(cmntt);
+                var zzz = '';
+                for (i=0; i< cmntt.length; i++) {
+                    zzz += `<li>` + cmntt[i] + '</li>';
+                    }
+                var divi = document.getElementById('cmntt');
+                divi.innerHTML = zzz;
+}
