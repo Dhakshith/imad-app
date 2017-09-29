@@ -95,12 +95,12 @@ loginoutcom = {
                 <input type="text" placeholder="username@gmail.com"><br>
                 </label>
                 <label>Your Comment: <br>
-                <textarea rows="5" cols="45" placeholder="Your Comment..."></textarea>
+                <textarea id="textcom rows="5" cols="45" placeholder="Your Comment..."></textarea>
                 </label><br>
-                <button class="button" type="submit">Submit</button><br><hr>
+                <button onclick="comment()" class="button" type="submit">Submit</button><br><hr>
             </form>
             <br><br>
-            <div class="cmnt_output">
+            <div id="cmnt_output" class="cmnt_output">
                 <h1>
                     Comments:<hr>
                 </h1>
