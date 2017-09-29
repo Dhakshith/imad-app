@@ -96,7 +96,7 @@ loginoutcom = {
                 <label>Your Comment: <br>
                 <textarea rows="5" cols="45" placeholder="Your Comment..."></textarea>
                 </label>
-                <input type="submit" name="Submit">
+                <button class="button" type="submit" name="Submit">
             </form>
             <br><hr>
         </div>
