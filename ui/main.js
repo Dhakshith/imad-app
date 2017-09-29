@@ -41,7 +41,3 @@ function move() {
     }
   }
 }
-
-function comment() {
-    alert("Your Comment Was Recieved As  " + textcom.value);
-}
