@@ -43,5 +43,5 @@ function move() {
 }
 
 function comment() {
-    alert('Your Comment Was Recieved As ' + comment.textcom.value);
+    alert('Your Comment Was Recieved As ') +  comment.textcom.value;
 }
