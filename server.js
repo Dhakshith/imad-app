@@ -88,10 +88,13 @@ loginoutcom = {
                 <input type="text"><br>
                 </label>
                 <label>Phone No.: <br>
-                <input type="number" value="xxxx-xxxxxx"><br>
+                <input type="number" placeholder="xxxx-xxxxxx"><br>
                 </label>
                 <label>Email Address: <br>
-                <input type="text" value="example: username@gmail.com"><br>
+                <input type="text" placeholder="example: username@gmail.com"><br>
+                </label>
+                <label>Your Comment: <br>
+                <textarea rows="5" cols="45" placeholder="Your Comment..."></textarea><br>
                 </label>
             </form>
             <br><br>
