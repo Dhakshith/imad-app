@@ -42,6 +42,7 @@ body {
 .button:hover {
     background-color: white;
     color: #738C8C;
+    animation: spin 5s linear infinite;
 }
 .a {
     list-style-image: url('sqpurple.gif');
@@ -96,4 +97,11 @@ body {
     text-align: center;
     border: 16px solid #FF3300;
     font-weight: bold;
+}
+.cmnt_output {
+    font-family: Franklin Gothic Demi Cond;
+    font-size: 70px;
+    color: #8C8CFF;
+    text-align: center;
+    border: 16px solid #FF3300;
 }
