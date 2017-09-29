@@ -43,6 +43,5 @@ function move() {
 }
 
 function comment() {
-    var cmntt = comment.textcom.value;   
-    alert('Your Comment Was Recieved As ' + cmntt);
+    alert('Your Comment Was Recieved As ' + comment.textcom.value);
 }
