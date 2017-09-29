@@ -89,3 +89,10 @@ body {
   line-height: 30px;
   color: white;
 }
+.cmnt_frm {
+    font-family: ar julian;
+    font-size: 70px;
+    color: #73ff8c;
+    text-align: center;
+    border: 16px solid #FF3300;
+}
