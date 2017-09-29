@@ -55,6 +55,7 @@ loginoutcom = {
     </head>
     <body>
         <div class="container">
+            <hr>
             <div>
                 <p style="font-size:37px;"><a href="/">Home</a>
             </div>
