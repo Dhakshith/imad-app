@@ -94,7 +94,7 @@ loginoutcom = {
                 <input type="text" placeholder="username@gmail.com"><br>
                 </label>
                 <label>Your Comment: <br>
-                <textarea rows="5" cols="45" placeholder="Your Comment..."></textarea><br>
+                <textarea rows="5" cols="45" placeholder="Your Comment..."></textarea>
                 </label>
                 <input type="submit" name="Submit">
             </form>
