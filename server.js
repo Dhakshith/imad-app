@@ -41,6 +41,59 @@ progress = {
 </html>
     `  
 };
+loginoutcom = {
+    content: `<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login | Logout | Comment
+        </title>
+        <link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" height="8px" />
+        <link href="/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="border: 2px solid #a1a1a1;padding: 50px 100px; background: #29FFC2;width: 500px;border-radius: 50px;text-shadow: -10px 10px 0px #00e6e6,-20px 20px 0px #01cccc,-30px 30px 0px #00bdbd;font-size: 150px;color:white">
+                Login   Logout
+            </h1>
+            <hr>
+            <div>
+                <p style="font-size:37px;"><a href="/">Home</a>
+            </div>
+            <hr>
+            <form name="login">
+                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="text" name="userid" placeholder="Username"/><br><br>
+                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" type="password" name="pswrd" placeholder="Password"/><hr>
+                <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="check(form)" value="Login"/><br><br>
+                <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="alert('Logged Out')" value="Logout"/><hr>
+            </form>
+            <hr>
+            <script language="javascript">
+                function check(form) {
+                    if(form.userid.value == form.pswrd.value) {
+                        alert('Logged In As ' + form.userid.value + ' !')
+                    } else { 
+                        if(form.userid.value != form.pswrd.value) {
+                            alert('OOPS! Username Or Password Seems To Be Invalid!')
+                        }
+                    }
+                }
+            </script>
+            <h1 style="border: 2px solid #a1a1a1;padding: 50px 100px;background: #29FFC2;width: 500px;border-radius: 50px;text-shadow: -10px 10px 0px #00e6e6,-20px 20px 0px #01cccc,-30px 30px 0px #00bdbd;font-size: 150px;color:white">
+                Comment
+            </h1>
+            <form name="Comment">
+                <input style="background-color: white;border: inset;color:#800080;padding: 20px 50px;text-align: center;display: inline-block;font-size: 40px;" placeholder="Name"/><br><br>
+                <textarea placeholder="COMMENT" rows="6" cols="47" style="font-family:ar destine;color:#57D9FF;font-size:20px;border:inset;display:inline-block"></textarea>
+                <br><br>
+                <input type="button" style="background-color: brown;border:inset;color:white;padding: 30px 70px;text-align: center;display:inline-block;font-size: 20px;" value="Submit">
+            </form>
+            <br><br>
+        </div>
+    </body>
+</html>`
+};
 profile = {
     content: `
     <!DOCTYPE html>
@@ -453,7 +506,7 @@ app.get('/article-8', function (req, res) {
   res.send(createTemplate(articleEight));
 });
 app.get('/Login|Logout', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Login.html'));
+  res.send(createTemplate(loginoutcom));
 });
 app.get('/article-9', function (req, res) {
     Pool.query(`SELECT name FROM "Articles" where title = 'Article-5'`, function (err, result){
