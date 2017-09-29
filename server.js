@@ -68,7 +68,6 @@ loginoutcom = {
                 <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="check(form)" value="Login"/><br><br>
                 <input style="background-color: brown;border: inset;color:white;padding: 30px 70px;text-align: center;display: inline-block;font-size: 20px;" type="button" onclick="alert('Logged Out')" value="Logout"/><hr>
             </form>
-            <hr>
             <script language="javascript">
                 function check(form) {
                     if(form.userid.value == form.pswrd.value) {
@@ -96,7 +95,7 @@ loginoutcom = {
                 <label>Your Comment: <br>
                 <textarea rows="5" cols="45" placeholder="Your Comment..."></textarea>
                 </label><br>
-                <button class="button" type="submit">Submit</button>
+                <button class="button" type="submit">Submit</button><br>
             </form>
             <br><br>
         </div>
