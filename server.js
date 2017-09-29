@@ -101,7 +101,7 @@ loginoutcom = {
             <br><br>
             <div class="cmnt_output">
                 <h1>
-                    Comments:
+                    Comments:<hr>
                 </h1>
             </div>
             <br><br>
