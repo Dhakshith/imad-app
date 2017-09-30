@@ -103,22 +103,4 @@ body {
     text-align: center;
     border: 16px solid #FF3300;
 }
-.text-animation {
-    list-style-image: url('sqpurple.gif');
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-.text-animation li{
-    display: inline-block;
-    margin-right: 5px;
-    font-weight: 300;
-    opacity: 1;
-    transition: all 2.5s ease;
-}
-.text-animation li:last-child{ margin-right: 0; }
-.text-animation.hidden{ opacity: 1; }
-.text-animation.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-20px); }
-.text-animation.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
-.text-animation.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.header {font-size:50px;color:#FFA300}
