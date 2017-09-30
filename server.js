@@ -35,6 +35,7 @@ progress = {
             </div><br><br>
             <button class="button" onclick="move()">Start Process</button>
     		<br><br><hr>
+    		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     	    <script type="text/javascript" src="/main.js"></script>
     	</div>
 	</body>
