@@ -25,17 +25,16 @@ progress = {
 	</head>
 	<body>
 	    <div class="container">
-    		<ul class="text-animation hidden"><li style="font-size:50px;color:#FFA300">Fidget Spinner</li></ul><br>
+    		<h1 class="header">Fidget Spinner</h1><br>
     		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
-    		<ul class="text-animation hidden"><li style="font-size:50px;color:#FFA300">Normal Spinner</li></ul><br>
+    		<h1 class="header">Normal Spinner</h1><br>
     		<div class="loader"></div>
-    		<ul class="text-animation hidden"><li style="font-size:50px;color:#FFA300">Rectangular Progress Bar</li></ul>
+    		<h1 class="header">Rectangular Progress Bar</h1>
     		<div id="myProgress">
                 <div id="myBar"></div>
             </div><br><br>
             <button class="button" onclick="move()">Start Process</button>
     		<br><br><hr>
-    		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     	    <script type="text/javascript" src="/main.js"></script>
     	</div>
 	</body>
