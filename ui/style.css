@@ -117,12 +117,8 @@ body {
     opacity: 1;
     transition: all 2.5s ease;
 }
-.text-animation li:last-child{
-    margin-right: 0;
-}
-.text-animation.hidden{
-    opacity: 0;
-}
+.text-animation li:last-child{ margin-right: 0; }
+.text-animation.hidden{ opacity: 0; }
 .text-animation.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
-.text-animation.hidden li:nth-child(2) { transform: translateX(-200px) translateY(-200px); }
-.text-animation.hidden li:nth-child(3) { transform: translateX(-200px) translateY(-200px); }
+.text-animation.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.text-animation.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
