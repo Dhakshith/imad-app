@@ -25,11 +25,11 @@ progress = {
 	</head>
 	<body>
 	    <div class="container">
-    		<ul class="text-animation hidden"><li style="font-size:50px;color:#FFA300">Fidget Spinner</li><br>
+    		<ul class="text-animation hidden"><li style="font-size:50px;color:#FFA300">Fidget Spinner</li></ul><br>
     		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
-    		<li style="font-size:50px;color:#FFA300">Normal Spinner</li><br>
+    		<ul class="text-animation hidden"><li style="font-size:50px;color:#FFA300">Normal Spinner</li></ul><br>
     		<div class="loader"></div>
-    		<li style="font-size:50px;color:#FFA300">Rectangular Progress Bar</li></ul>
+    		<ul class="text-animation hidden"><li style="font-size:50px;color:#FFA300">Rectangular Progress Bar</li></ul>
     		<div id="myProgress">
                 <div id="myBar"></div>
             </div><br><br>
