@@ -36,7 +36,12 @@ progress = {
             <button class="button" onclick="move()">Start Process</button>
     		<br><br><hr>
     	    <script type="text/javascript" src="/main.js"></script>
-    	</div>
+    	    <div class="circles">
+                <div class="second circle">
+                    <span>animation <br> progress</span>
+                        </div>
+    	        </div>
+            </div>
 	</body>
 </html>
     `  
