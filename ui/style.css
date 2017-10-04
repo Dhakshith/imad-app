@@ -69,7 +69,7 @@ body {
 }
 .fidget {
 	height: 150px;
-	animation: spin 2s;
+	animation: spin 2s 5s;
 }
 @keyframes spin {
 	100% { transform: rotate(360deg);}
