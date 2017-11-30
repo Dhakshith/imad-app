@@ -67,6 +67,26 @@ Clock = {
     </html>
     `  
 };
+Beesweeper = {
+    content: `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    	<link rel="icon" href="http://upload.wikimedia.org/wikipedia/commons/1/1f/Html5_canvas_logo.png">
+    	<meta charset="UTF-8">
+    	<title>Minesweeper Game</title>
+    </head>
+    <body>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/addons/p5.sound.min.js"></script>
+    	<script src="Cell.js"></script>
+    	<script src="Game.js"></script>
+    	<link rel="stylesheet" type="text/css" href="Game.css">
+    </body>
+    </html>
+    `
+};
 loginoutcom = {
     content: `<!DOCTYPE html>
 <html>
@@ -573,6 +593,9 @@ app.get('/Progress', function (req, res) {
 });
 app.get('/Clock', function (req, res) {
     res.send(createTemplate(Clock));
+});
+app.get('/Beesweeper', function (req, res) {
+    res.send(createTemplate(Beesweeper));
 });
 var counter = 0;
 app.get('/Counter', function (req, res) {
