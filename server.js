@@ -61,7 +61,7 @@ Clock = {
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
     	<script src="https://raw.githubusercontent.com/lmccart/p5.js/master/lib/addons/p5.dom.js"></script>
     	<script src="https://raw.githubusercontent.com/lmccart/p5.js/master/lib/addons/p5.sound.js"></script>
-    	<script src="sketch.js"></script>
+    	<script src="/sketch.js"></script>
     </body>
     </html>
     `  
