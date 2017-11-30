@@ -510,6 +510,9 @@ app.get('/hash/:input', function (req, res) {
 app.get('/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+app.get('/sketch.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'sketch.js'));
+});
 app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
