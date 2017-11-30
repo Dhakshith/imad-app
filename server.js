@@ -567,6 +567,9 @@ app.get('/MyProfile', function (req, res) {
 app.get('/Progress', function (req, res) {
     res.send(createTemplate(progress));
 });
+app.get('/Clock', function (req, res) {
+    res.send(createTemplate(Clock));
+});
 var counter = 0;
 app.get('/Counter', function (req, res) {
     counter = counter + 1;
