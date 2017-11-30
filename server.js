@@ -16,29 +16,54 @@ app.use(morgan('combined'));
 progress = {
     content: `
     <!DOCTYPE html>
-<html lang="en">
-	<head>	
-		<meta charset="UTF-8">
-		<title>ProgressBar+Spinners</title>
-		<link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
-		<link href="/style.css" rel="stylesheet" />
-	</head>
-	<body>
-	    <div class="container">
-    		<h1 class="header">Fidget Spinner</h1><br>
-    		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
-    		<h1 class="header">Normal Spinner</h1><br>
-    		<div class="loader"></div>
-    		<h1 class="header">Rectangular Progress Bar</h1>
-    		<div id="myProgress">
-                <div id="myBar"></div>
-            </div><br><br>
-            <button class="button" onclick="move()">Start Process</button>
-    		<br><br><hr>
-    	    <script type="text/javascript" src="/main.js"></script>
-            </div>
-	</body>
-</html>
+    <html lang="en">
+    	<head>	
+    		<meta charset="UTF-8">
+    		<title>ProgressBar+Spinners</title>
+    		<link href="/style.css" rel="stylesheet"><title>My Profile</title><link rel="icon" type="image/gif" href="https://i.pinimg.com/736x/bf/91/8f/bf918fed99e248e964fa1a2bdc2d8e05--logo-branding-branding-design.jpg" />
+    		<link href="/style.css" rel="stylesheet" />
+    	</head>
+    	<body>
+    	    <div class="container">
+        		<h1 class="header">Fidget Spinner</h1><br>
+        		<img src="https://cdn2.iconfinder.com/data/icons/fidget-spinners/500/Round-outline-moving-512.png" class="fidget">
+        		<h1 class="header">Normal Spinner</h1><br>
+        		<div class="loader"></div>
+        		<h1 class="header">Rectangular Progress Bar</h1>
+        		<div id="myProgress">
+                    <div id="myBar"></div>
+                </div><br><br>
+                <button class="button" onclick="move()">Start Process</button>
+        		<br><br><hr>
+        	    <script type="text/javascript" src="/main.js"></script>
+                </div>
+    	</body>
+    </html>
+    `  
+};
+Clock = {
+    content: `
+    <!DOCTYPE html>
+    <html>
+    <head>
+    	<link rel="icon" href="http://upload.wikimedia.org/wikipedia/commons/1/1f/Html5_canvas_logo.png">
+    	<meta charset="UTF-8">
+    	<title>Clock</title>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    	<style type="text/css">
+    		* {
+    			overflow: hidden;
+    		}
+    	</style>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+    	<script src="https://raw.githubusercontent.com/lmccart/p5.js/master/lib/addons/p5.dom.js"></script>
+    	<script src="https://raw.githubusercontent.com/lmccart/p5.js/master/lib/addons/p5.sound.js"></script>
+    	<script src="sketch.js"></script>
+    </body>
+    </html>
     `  
 };
 loginoutcom = {
