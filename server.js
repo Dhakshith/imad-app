@@ -52,7 +52,11 @@ Clock = {
     	<title>Clock</title>
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link href="/style.css" rel="stylesheet" />
+    	<style>
+    	    * {
+    	        background: #66FFAB;
+    	    }
+    	</style>
     </head>
     <body>
     	<style type="text/css">
