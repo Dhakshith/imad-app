@@ -82,7 +82,11 @@ Beesweeper = {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.9/addons/p5.sound.min.js"></script>
     	<script src="Cell.js"></script>
     	<script src="Game.js"></script>
-    	<link rel="stylesheet" type="text/css" href="Game.css">
+    	<style>
+        	* {
+        	    overflow: hidden;
+        	}
+    	</style>
     </body>
     </html>
     `
@@ -533,6 +537,12 @@ app.get('/main.js', function (req, res) {
 });
 app.get('/sketch.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sketch.js'));
+});
+app.get('/Cell.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Cell.js'));
+});
+app.get('/Game.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Game.js'));
 });
 app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
